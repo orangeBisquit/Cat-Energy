@@ -1,0 +1,29 @@
+.promo {
+  margin: 0 auto;
+  padding-bottom: 22px;
+  width: 320px;
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+.promo__title {
+  margin: 0;
+  margin-bottom: 25px;
+  padding-top: 27px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $basic-white;
+  text-align: center;
+}
+.promo__slogan {
+  margin: 0;
+  margin: 29px;
+  font-size: 14px;
+  line-height: 14px;
+  color: $basic-white;
+  text-align: center;
+}
+.promo__image {
+  width: 280px;
+  height: 270px;
+}

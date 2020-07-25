@@ -1,0 +1,16 @@
+.header__wrapper-top {
+  display: flex;
+  padding: 24px 0;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid $border-color;
+}
+
+.header__toggle {
+  margin-left: auto;
+  border: 0;
+  width: 18px;
+  height: 18px;
+  background-image: url("../../img/icon-close.svg");
+  background-color: $basic-white;
+}

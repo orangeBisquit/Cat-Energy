@@ -1,0 +1,22 @@
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-nav__item:not(:last-child) {
+  border-bottom: 1px solid $border-color;
+}
+
+.main-nav__link {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 22px 40px 24px;
+  width: 280px;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: $basic-black;
+  text-decoration: none;
+}

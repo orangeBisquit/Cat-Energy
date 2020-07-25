@@ -7,14 +7,16 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page-body">
   <header class="header">
     <div class="container">
-      <a href="index.html" class="header__logo" aria-label="Ссылка на главную страницу">
-        <img class="header__logo-img" src="img/logo-mobile.svg" alt="Логотип магазина Cat Energy" width="190"
-          height="38">
-      </a>
-      <button class="header__toggle" type="button" aria-label="Открыть/Закрыть навигацию по сайту"></button>
+      <div class="header__wrapper-top">
+        <a href="index.html" class="header__logo" aria-label="Ссылка на главную страницу">
+          <img class="header__logo-img" src="img/logo-mobile.svg" alt="Логотип магазина Cat Energy" width="190"
+            height="38">
+        </a>
+        <button class="header__toggle" type="button" aria-label="Открыть/Закрыть навигацию по сайту"></button>
+      </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -240,54 +242,56 @@
         </div>
       </div>
     </section>
-    <section class="dealers">
-      <div class="container">
-        <h2 class="visually-hidden">Наш Адрес</h2>
-        <h3 class="dealers__invite">Приглашаем
-          к сотрудничеству дилеров!</h3>
-        <p class="dealers__address">ул. Большая
-          Конюшенная, д. 19/8
-          Санкт-Петербург</p>
-        <div class="dealers__map-wrapper">
-          <img class="dealers__map-image" src="img/bg-map-mobile@1x.png"
-            alt="Магазин Cat Energy на карте Санкт-Петербурга">
-        </div>
-      </div>
-    </section>
   </main>
   <footer class="footer">
     <div class="container">
-      <div class="footer__logo-wrapper">
-        <a class="footer__logo-link" href="index.html" aria-label="Ссылка на главную страницу">
-          <img class="footer__logo-img" src="img/logo-footer.svg" alt="Логотип Cat Energy" width="128" height="24">
-        </a>
-      </div>
-      <div class="footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="Магазин Cat Energy в Vkontakte">
-              <img class="social__icon" src="https://via.placeholder.com/22x22" width="22" height="22">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="Магазин Cat Energy в Instagram">
-              <img class="social__icon" src="https://via.placeholder.com/22x22" width="22" height="22">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="Магазин Cat Energy в Facebook">
-              <img class="social__icon" src="https://via.placeholder.com/22x22" width="22" height="22">
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
-          aria-label="Ссылка на сайт HTML Academy">
-          <span class="copyright__text">HTML Academy</span>
-          <img class="copyright__logo" src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy" width="27"
-            height="34">
-        </a>
+      <section class="dealers">
+        <div class="container">
+          <h2 class="visually-hidden">Наш Адрес</h2>
+          <h3 class="dealers__invite">Приглашаем
+            к сотрудничеству дилеров!</h3>
+          <p class="dealers__address">ул. Большая
+            Конюшенная, д. 19/8
+            Санкт-Петербург</p>
+          <div class="dealers__map-wrapper">
+            <img class="dealers__map-image" src="img/bg-map-mobile@1x.png"
+              alt="Магазин Cat Energy на карте Санкт-Петербурга">
+          </div>
+        </div>
+      </section>
+      <div class="footer__main-wrapper">
+        <div class="footer__logo-wrapper">
+          <a class="footer__logo-link" href="index.html" aria-label="Ссылка на главную страницу">
+            <img class="footer__logo-img" src="img/logo-footer.svg" alt="Логотип Cat Energy" width="128" height="24">
+          </a>
+        </div>
+        <div class="footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Магазин Cat Energy в Vkontakte">
+                <img class="social__icon" src="https://via.placeholder.com/22x22" width="22" height="22">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Магазин Cat Energy в Instagram">
+                <img class="social__icon" src="https://via.placeholder.com/22x22" width="22" height="22">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Магазин Cat Energy в Facebook">
+                <img class="social__icon" src="https://via.placeholder.com/22x22" width="22" height="22">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
+            aria-label="Ссылка на сайт HTML Academy">
+            <span class="copyright__text">HTML Academy</span>
+            <img class="copyright__logo" src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy" width="27"
+              height="34">
+          </a>
+        </div>
       </div>
     </div>
   </footer>
