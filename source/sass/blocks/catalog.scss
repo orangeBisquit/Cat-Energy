@@ -7,6 +7,35 @@
   margin-bottom: 25px;
 }
 .catalog__item--all {
-  outline: 1px solid red;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
   padding: 25px 0;
+}
+.catalog__button-plus {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 23px;
+  border: 0;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../img/icon-plus-mobile.svg");
+  background-color: transparent;
+  opacity: 0.3;
+}
+.catalog__title-all {
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 40;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+.catalog__description-all {
+  margin: 0;
+  margin-bottom: 21px;
+  font-family: $font-arial;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
 }

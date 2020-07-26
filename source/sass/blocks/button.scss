@@ -1,11 +1,15 @@
 .button {
   display: block;
-  padding: 10px 0;
-  font-size: 14px;
+  padding: 12px 0;
+  font-size: 16px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: $basic-white;
   background-color: $basic-green;
+}
+.button--grey {
+  background-color: $basic-light;
+  color: $basic-grey-dark;
 }

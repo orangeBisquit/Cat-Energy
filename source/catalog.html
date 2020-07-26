@@ -213,7 +213,7 @@
             <button class="catalog__button-plus" type="button" aria-label="Показать все товары"></button>
             <h3 class="catalog__title-all">Показать еще 100500 товаров</h3>
             <p class="catalog__description-all">На самом деле вкусов гораздо больше!</p>
-            <a href="#" class="catalog__button-all button--grey">Показать все</a>
+            <a href="#" class="catalog__button-all button button--grey">Показать все</a>
           </li>
         </ul>
       </div>
@@ -224,26 +224,34 @@
         <ul class="addons__list">
           <li class="addons__item addon-card">
             <h3 class="addon-card__title">Сахарозаменитель</h3>
-            <p class="addon-card__description">1 упаковка (100 г)</p>
-            <p class="addon-card__price">200 Р.</p>
+            <div class="addon-card__text-wrapper">
+              <p class="addon-card__description">1 упаковка (100 г)</p>
+              <p class="addon-card__price">200 Р.</p>
+            </div>
             <a href="#" class="addon-card__button-order button">Заказать</a>
           </li>
           <li class="addons__item addon-card">
             <h3 class="addon-card__title">Питьевая вода</h3>
-            <p class="addon-card__description">5 литров</p>
-            <p class="addon-card__price">50 Р.</p>
+            <div class="addon-card__text-wrapper">
+              <p class="addon-card__description">5 литров</p>
+              <p class="addon-card__price">50 Р.</p>
+            </div>
             <a href="#" class="addon-card__button-order button">Заказать</a>
           </li>
           <li class="addons__item addon-card">
             <h3 class="addon-card__title">Молоко</h3>
-            <p class="addon-card__description">1 литр</p>
-            <p class="addon-card__price">100 Р.</p>
+            <div class="addon-card__text-wrapper">
+              <p class="addon-card__description">1 литр</p>
+              <p class="addon-card__price">100 Р.</p>
+            </div>
             <a href="#" class="addon-card__button-order button">Заказать</a>
           </li>
           <li class="addons__item addon-card">
             <h3 class="addon-card__title">Витамины</h3>
-            <p class="addon-card__description">1 упаковка (30 г)</p>
-            <p class="addon-card__price">300 Р.</p>
+            <div class="addon-card__text-wrapper">
+              <p class="addon-card__description">1 упаковка (30 г)</p>
+              <p class="addon-card__price">300 Р.</p>
+            </div>
             <a href="#" class="addon-card__button-order button">Заказать</a>
           </li>
         </ul>
@@ -252,27 +260,29 @@
     <section class="order-all">
       <div class="container">
         <div class="order-all__wrapper">
-          <h3 class="order-all__text">Закажите всеи получите чехол для кота в подарок!</h3>
+          <div class="block-DELETE"></div> <!-- DELETE -->
+          <h3 class="order-all__text">Закажите все и получите чехол для кота в подарок!</h3>
         </div>
       </div>
     </section>
   </main>
   <footer class="footer">
+    <section class="dealers">
+      <div class="dealers__wrapper">
+        <h2 class="visually-hidden">Наш Адрес</h2>
+        <h3 class="dealers__invite">Приглашаем
+          к сотрудничеству дилеров!</h3>
+        <p class="dealers__address">ул. Большая
+          Конюшенная, д. 19/8
+          Санкт-Петербург</p>
+      </div>
+      <div class="dealers__map-wrapper">
+        <img class="dealers__map-image" src="img/bg-map-mobile@1x.png"
+          alt="Магазин Cat Energy на карте Санкт-Петербурга">
+      </div>
+
+    </section>
     <div class="container">
-      <section class="dealers">
-        <div class="container">
-          <h2 class="visually-hidden">Наш Адрес</h2>
-          <h3 class="dealers__invite">Приглашаем
-            к сотрудничеству дилеров!</h3>
-          <p class="dealers__address">ул. Большая
-            Конюшенная, д. 19/8
-            Санкт-Петербург</p>
-          <div class="dealers__map-wrapper">
-            <img class="dealers__map-image" src="img/bg-map-mobile@1x.png"
-              alt="Магазин Cat Energy на карте Санкт-Петербурга">
-          </div>
-        </div>
-      </section>
       <div class="footer__main-wrapper">
         <div class="footer__logo-wrapper">
           <a class="footer__logo-link" href="index.html" aria-label="Ссылка на главную страницу">

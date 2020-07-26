@@ -1,3 +1,30 @@
 .dealers {
-  outline: 1px solid red;
+  margin: 0 auto;
+  padding-top: 28px;
+  width: 320px;
+  background-color: $basic-light;
+  &--light {
+    background-color: $basic-white;
+  }
+}
+
+.dealers__invite {
+  margin: 0;
+  width: 50%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+.dealers__address {
+  margin: 0;
+  width: 50%;
+  font-family: $font-arial;
+  font-size: 14px;
+  line-height: 20px;
+}
+.dealers__wrapper {
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 22px;
+  width: 280px;
 }

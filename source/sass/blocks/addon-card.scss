@@ -1,3 +1,24 @@
 .addon-card {
-  outline: 1px solid red;
+  border-bottom: 1px solid $stat-list-border;
+  padding: 13px 0 18px;
+}
+.addon-card__title {
+  margin: 0;
+  margin-bottom: 13px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.addon-card__text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+.addon-card__description,
+.addon-card__price {
+  margin: 0;
+  font-family: $font-arial;
+  font-size: 14px;
+  line-height: 14px;
 }
