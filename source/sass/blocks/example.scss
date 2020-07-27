@@ -1,8 +1,13 @@
 .example {
   padding-top: 27px;
-  width: 320px;
-  margin: 0 auto;
+  padding-bottom: 31px;
+  width: 100vw;
   background-color: $example-bg;
+}
+.example__inner {
+  margin: 0 auto;
+  width: 280px;
+  outline: 1px solid red; /* DELETE */
 }
 .example__title {
   margin-bottom: 33px;
