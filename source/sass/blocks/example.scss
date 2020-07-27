@@ -1,0 +1,21 @@
+.example {
+  padding-top: 27px;
+  width: 320px;
+  margin: 0 auto;
+  background-color: $example-bg;
+}
+.example__title {
+  margin-bottom: 33px;
+}
+.example__description {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: $font-arial;
+  font-size: 14px;
+  line-height: 18px;
+}
+.example__sup-title {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}

@@ -1,0 +1,11 @@
+.data-table {
+  width: 100%;
+  font-family: $font-arial;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.data-table__item {
+  display: flex;
+  justify-content: space-between;
+}

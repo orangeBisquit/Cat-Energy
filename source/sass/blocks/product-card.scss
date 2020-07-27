@@ -1,0 +1,17 @@
+.product-card {
+  border-top: 1px solid $basic-grey;
+  padding-top: 19px;
+}
+
+.product-card__inner-top {
+  display: flex;
+  margin-bottom: 22px;
+}
+.product-card__title {
+  margin: 0;
+  margin-bottom: 18px;
+  padding-right: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}

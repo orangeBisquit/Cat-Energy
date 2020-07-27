@@ -1,0 +1,36 @@
+.stat-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 26px;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+.stat-list__item {
+  position: relative;
+  border: 1px solid $stat-list-border;
+  width: 124px;
+  height: 55px;
+}
+.stat-list__value {
+  position: relative;
+  z-index: 1;
+  padding: 14px 0;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  vertical-align: middle;
+}
+.stat-list__name {
+  position: absolute;
+  z-index: 2;
+  bottom: -13px;
+  left: 25px;
+  padding: 0 10px;
+  width: 65px;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  background-color: $example-bg;
+}
