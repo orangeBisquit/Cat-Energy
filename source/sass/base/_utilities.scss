@@ -6,6 +6,9 @@
 .container {
   width: 280px;
   margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
 }
 .visually-hidden {
   position: absolute;
@@ -18,4 +21,8 @@
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
+}
+img {
+  width: 100%;
+  height: auto;
 }

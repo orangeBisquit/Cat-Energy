@@ -1,7 +1,14 @@
 .main-nav__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: -34px;
+  }
 }
 .main-nav__item:not(:last-child) {
   border-bottom: 1px solid $border-color;
@@ -19,4 +26,13 @@
   line-height: 20px;
   color: $basic-black;
   text-decoration: none;
+  text-transform: uppercase;
+  @media (min-width: $tablet-width) {
+    margin-right: 34px;
+    padding: 18px 0;
+    width: auto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }

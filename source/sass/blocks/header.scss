@@ -1,11 +1,25 @@
+.header__inner {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+  }
+}
 .header__wrapper-top {
   display: flex;
   padding: 24px 0;
   align-items: center;
   position: relative;
   border-bottom: 1px solid $border-color;
+  @media (min-width: $tablet-width) {
+    border: 0;
+    padding: 0;
+  }
 }
-
+.header__logo {
+  width: 190px;
+  height: 38px;
+}
 .header__toggle {
   margin-left: auto;
   border: 0;
@@ -13,4 +27,7 @@
   height: 18px;
   background-image: url("../../img/icon-close.svg");
   background-color: $basic-white;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
