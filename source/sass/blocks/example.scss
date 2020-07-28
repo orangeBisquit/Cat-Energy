@@ -3,14 +3,24 @@
   padding-bottom: 31px;
   width: 100vw;
   background-color: $example-bg;
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    background-color: $basic-white;
+    border-top: 1px solid $border-color;
+  }
 }
 .example__inner {
   margin: 0 auto;
   width: 280px;
-  outline: 1px solid red; /* DELETE */
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
 }
 .example__title {
   margin-bottom: 33px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+  }
 }
 .example__description {
   margin: 0;
@@ -19,8 +29,32 @@
   font-size: 14px;
   line-height: 18px;
 }
+.example__data-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.example__data {
+  width: 366px;
+}
 .example__sup-title {
+  margin: 0;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
+  text-transform: uppercase;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+  }
+}
+.example__demo-img {
+  width: 311px;
+  height: 232px;
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 607px;
+  }
 }
