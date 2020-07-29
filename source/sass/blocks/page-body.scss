@@ -8,3 +8,20 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
 }
+.page-body__promo {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+  }
+}
+.page-body__category {
+  margin-bottom: 27px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+}
+.page-body__advantages {
+  margin-bottom: 30px;
+}

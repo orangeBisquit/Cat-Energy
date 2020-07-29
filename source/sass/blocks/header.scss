@@ -3,14 +3,18 @@
     display: flex;
     justify-content: space-between;
     padding-top: 24px;
-    width: 708px;
+    width: $tablet-width;
     margin: 0 auto;
+  }
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+    width: $desktop-width;
   }
 }
 .header__wrapper-top {
   display: flex;
   margin: 0 auto;
-  padding: 24px 0;
+  padding: 12px 0 17px;
   width: 277px;
   align-items: center;
   position: relative;

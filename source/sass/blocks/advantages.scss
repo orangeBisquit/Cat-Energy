@@ -17,6 +17,10 @@
     row-gap: 37px;
     margin-right: 50px;
   }
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 72px;
+  }
 }
 .advantages__item {
   position: relative;

@@ -1,12 +1,39 @@
 .example {
+  position: relative;
   padding-top: 27px;
   padding-bottom: 31px;
   width: 100vw;
   background-color: $example-bg;
+  &::before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      display: block;
+      content: "";
+      bottom: 0;
+      z-index: -1;
+      width: 100%;
+      height: 462px;
+      background-color: $basic-light;
+    }
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      display: block;
+      content: "";
+      top: 130px;
+      z-index: -1;
+      width: 100vw;
+      height: calc(100% - 130px);
+      background-color: $basic-light;
+    }
+  }
   @media (min-width: $tablet-width) {
-    padding-top: 43px;
-    background-color: $basic-white;
     border-top: 1px solid $border-color;
+    padding-top: 43px;
+    background-color: transparent;
+  }
+  @media (min-width: $desktop-width) {
+    border: 0;
+    padding: 0;
   }
 }
 .example__inner {
@@ -15,11 +42,19 @@
   @media (min-width: $tablet-width) {
     width: 708px;
   }
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1220px;
+  }
 }
 .example__title {
   margin-bottom: 33px;
   @media (min-width: $tablet-width) {
     margin-bottom: 63px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
   }
 }
 .example__description {
@@ -28,11 +63,19 @@
   font-family: $font-arial;
   font-size: 14px;
   line-height: 18px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+    width: 436px;
+  }
 }
 .example__data-wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+  }
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 .example__data {
@@ -48,6 +91,15 @@
     font-size: 20px;
     line-height: 24px;
     text-align: right;
+    span {
+      display: block;
+    }
+  }
+  @media (min-width: $desktop-width) {
+    span {
+      display: inline-block;
+      margin-right: 63px;
+    }
   }
 }
 .example__demo-img {

@@ -33,7 +33,7 @@
     </div>
   </header>
   <main>
-    <section class="promo">
+    <section class="promo page-body__promo">
       <div class="promo__wrapper">
         <div class="container">
           <div class="promo__inner">
@@ -47,7 +47,7 @@
         </div>
       </div>
     </section>
-    <section class="category">
+    <section class="category page-body__category">
       <div class="container">
         <ul class="category__list">
           <li class="category__item">
@@ -73,7 +73,7 @@
         </ul>
       </div>
     </section>
-    <section class="advantages">
+    <section class="advantages page-body__advantages">
       <div class="container">
         <h2 class="advantages__title title">Как это работает</h2>
         <ul class="advantages__list">
@@ -97,8 +97,8 @@
       </div>
     </section>
     <section class="example">
-      <div class="container">
-        <div class="example__inner">
+      <div class="example__inner">
+        <div class="example__column">
           <div class="example__text-wrapper">
             <h2 class="example__title title">Живой пример</h2>
             <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
@@ -117,8 +117,11 @@
                 <div class="stat-list__name">затрачено времени</div>
               </li>
             </ul>
-            <p class="example__sup-title">Затраты на питание: <br> 15 000 РУБ.</p>
+            <p class="example__sup-title">
+              <span>Затраты на питание:</span> 15 000 РУБ.</p>
           </div>
+        </div>
+        <div class="example__column">
           <div class="example__demo-wrapper">
             <img class="example__demo-img" src="img/before-desktop@1x.png" alt="" width="311" height="232">
             <!-- SOMETHING -->
@@ -131,13 +134,15 @@
   </main>
   <footer class="footer">
     <section class="dealers dealers--light">
-      <div class="dealers__inner">
-        <h2 class="visually-hidden">Наш Адрес</h2>
-        <h3 class="dealers__invite">Приглашаем
-          к сотрудничеству дилеров!</h3>
-        <p class="dealers__address">ул. Большая
-          Конюшенная, д. 19/8
-          Санкт-Петербург</p>
+      <div class="container">
+        <div class="dealers__inner">
+          <h2 class="visually-hidden">Наш Адрес</h2>
+          <h3 class="dealers__invite">Приглашаем <br>
+            к сотрудничеству дилеров!</h3>
+          <p class="dealers__address">ул. Большая
+            Конюшенная, д. 19/8
+            <span>Санкт-Петербург</span></p>
+        </div>
       </div>
       <div class="dealers__map-wrapper">
         <div style="position:relative;overflow:hidden;">
