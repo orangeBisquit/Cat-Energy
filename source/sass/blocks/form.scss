@@ -1,3 +1,135 @@
 .form {
-  outline: 1px solid red;
+  padding-bottom: 32px;
+}
+.form__category {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  &--border-special {
+    position: relative;
+    &::after {
+      @include top-border-grey;
+    }
+  }
+  &--goal {
+    position: relative;
+    padding-top: 26px;
+    padding-bottom: 22px;
+    &::after {
+      @include top-border-grey;
+    }
+  }
+  &--green {
+  }
+}
+.form__legend {
+  margin-bottom: 34px;
+  padding-top: 26px;
+  padding-right: 22px;
+  font-size: 24px;
+  line-height: 26px;
+  &--green {
+    position: relative;
+    &::after {
+      display: block;
+      position: absolute;
+      top: 40px;
+      right: calc(-1 * ((280px - 100%) + ((100vw - 280px) / 2));
+      content: "";
+      width: calc((280px - 100%) + ((100vw - 280px) / 2); /* Ширина контейнера минус ширина самой легенды, плюс половина VW за минусом ширины контейнера*/
+      height: 3px;
+      background-color: $basic-green;
+    }
+  }
+}
+.form__data-field,
+.form__option {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 13px;
+}
+.form__option {
+  margin-bottom: 19px;
+}
+.form__data-label,
+.form__option-label {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.form__data-label {
+  margin-right: 14px;
+  white-space: nowrap;
+}
+.form__data-input {
+  flex-grow: 1;
+  border: 1px solid $input-border;
+  padding: 13px;
+  padding-right: 0;
+  &::placeholder {
+    font-family: $font-oswald;
+    color: $basic-black;
+    text-transform: uppercase;
+  }
+  &--comment {
+    min-height: 150px;
+  }
+}
+.form__button-submit {
+  margin-top: 20px;
+  width: 100%;
+}
+.form__required-fields {
+  display: block;
+  margin-top: 21px;
+  text-align: center;
+}
+// Pseudo Inputs - Hide Default
+.form__option-input {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  opacity: 0;
+  font-size: 0;
+}
+// Pseudo Inputs - Radio
+.form__option-input[type="radio"] + .form__option-label {
+  padding-left: 46px;
+}
+.form__option-input[type="radio"] + .form__option-label::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  border: 1px solid $stat-list-border;
+}
+.form__option-input[type="radio"]:checked + .form__option-label::before {
+  background-image: url("../../img/radio-button.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+// Pseudo Inputs - Checkbox
+.form__option-input[type="checkbox"] + .form__option-label {
+  padding-left: 46px;
+}
+.form__option-input[type="checkbox"] + .form__option-label::before {
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  content: "";
+  width: 26px;
+  height: 26px;
+  border: 1px solid $stat-list-border;
+}
+.form__option-input[type="checkbox"]:checked + .form__option-label::before {
+  background-image: url("../../img/checkbox.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
 }

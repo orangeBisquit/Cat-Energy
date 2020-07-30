@@ -1,0 +1,13 @@
+@mixin top-border-grey {
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: calc(-1 * ((100vw - 280px) / 2));
+  content: "";
+  width: 100vw;
+  height: 1px;
+  background-color: $basic-grey;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

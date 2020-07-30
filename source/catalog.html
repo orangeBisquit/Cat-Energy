@@ -9,15 +9,15 @@
 
 <body class="page-body">
   <header class="header">
-    <div class="container">
+    <div class="header__inner">
       <div class="header__wrapper-top">
-        <a href="index.html" class="header__logo" aria-label="Ссылка на главную страницу">
+        <a class="header__logo" href="index.html" aria-label="Ссылка на главную страницу">
           <img class="header__logo-img" src="img/logo-mobile.svg" alt="Логотип магазина Cat Energy" width="190"
             height="38">
         </a>
         <button class="header__toggle" type="button" aria-label="Открыть/Закрыть навигацию по сайту"></button>
       </div>
-      <nav class="main-nav">
+      <nav class="header__nav main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
@@ -38,7 +38,7 @@
         <h1 class="content-header__title title">Каталог продукции</h1>
       </div>
     </section>
-    <section class="catalog">
+    <section class=" page-body__catalog">
       <div class="container">
         <ul class="catalog__list">
           <li class="catalog__item product-card">
@@ -63,7 +63,9 @@
                 </table>
               </div>
             </div>
-            <a class="product-card__button button" href="#">Заказать</a>
+            <div class="product-card__inner-bottom">
+              <a class="product-card__button button" href="#">Заказать</a>
+            </div>
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__inner-top">
@@ -87,7 +89,9 @@
                 </table>
               </div>
             </div>
-            <a class="product-card__button button" href="#">Заказать</a>
+            <div class="product-card__inner-bottom">
+              <a class="product-card__button button" href="#">Заказать</a>
+            </div>
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__inner-top">
@@ -111,7 +115,9 @@
                 </table>
               </div>
             </div>
-            <a class="product-card__button button" href="#">Заказать</a>
+            <div class="product-card__inner-bottom">
+              <a class="product-card__button button" href="#">Заказать</a>
+            </div>
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__inner-top">
@@ -135,7 +141,9 @@
                 </table>
               </div>
             </div>
-            <a class="product-card__button button" href="#">Заказать</a>
+            <div class="product-card__inner-bottom">
+              <a class="product-card__button button" href="#">Заказать</a>
+            </div>
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__inner-top">
@@ -159,7 +167,9 @@
                 </table>
               </div>
             </div>
-            <a class="product-card__button button" href="#">Заказать</a>
+            <div class="product-card__inner-bottom">
+              <a class="product-card__button button" href="#">Заказать</a>
+            </div>
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__inner-top">
@@ -183,7 +193,9 @@
                 </table>
               </div>
             </div>
-            <a class="product-card__button button" href="#">Заказать</a>
+            <div class="product-card__inner-bottom">
+              <a class="product-card__button button" href="#">Заказать</a>
+            </div>
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__inner-top">
@@ -207,75 +219,105 @@
                 </table>
               </div>
             </div>
-            <a class="product-card__button button" href="#">Заказать</a>
+            <div class="product-card__inner-bottom">
+              <a class="product-card__button button" href="#">Заказать</a>
+            </div>
           </li>
-          <li class="catalog__item catalog__item--all">
-            <button class="catalog__button-plus" type="button" aria-label="Показать все товары"></button>
-            <h3 class="catalog__title-all">Показать еще 100500 товаров</h3>
-            <p class="catalog__description-all">На самом деле вкусов гораздо больше!</p>
-            <a href="#" class="catalog__button-all button--grey">Показать все</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="addons">
-      <div class="container">
-        <h2 class="addons__title">Дополнительные товары</h2>
-        <ul class="addons__list">
-          <li class="addons__item addon-card">
-            <h3 class="addon-card__title">Сахарозаменитель</h3>
-            <p class="addon-card__description">1 упаковка (100 г)</p>
-            <p class="addon-card__price">200 Р.</p>
-            <a href="#" class="addon-card__button-order button">Заказать</a>
-          </li>
-          <li class="addons__item addon-card">
-            <h3 class="addon-card__title">Питьевая вода</h3>
-            <p class="addon-card__description">5 литров</p>
-            <p class="addon-card__price">50 Р.</p>
-            <a href="#" class="addon-card__button-order button">Заказать</a>
-          </li>
-          <li class="addons__item addon-card">
-            <h3 class="addon-card__title">Молоко</h3>
-            <p class="addon-card__description">1 литр</p>
-            <p class="addon-card__price">100 Р.</p>
-            <a href="#" class="addon-card__button-order button">Заказать</a>
-          </li>
-          <li class="addons__item addon-card">
-            <h3 class="addon-card__title">Витамины</h3>
-            <p class="addon-card__description">1 упаковка (30 г)</p>
-            <p class="addon-card__price">300 Р.</p>
-            <a href="#" class="addon-card__button-order button">Заказать</a>
+          <li class="catalog__item product-all">
+            <div class="product-all__inner">
+              <button class="product-all__button-plus" type="button" aria-label="Показать все товары"></button>
+              <h3 class="product-all__title">Показать еще 100500 товаров</h3>
+              <p class="product-all__description">На самом деле вкусов гораздо больше!</p>
+              <a href="#" class="product-all__button-all button button--grey">Показать все</a>
+            </div>
           </li>
         </ul>
       </div>
     </section>
-    <section class="order-all">
-      <div class="container">
-        <div class="order-all__wrapper">
-          <h3 class="order-all__text">Закажите всеи получите чехол для кота в подарок!</h3>
+    <section class="addons page-body__addons">
+      <div class="addons__wrapper">
+        <div class="addons__inner">
+          <h2 class="addons__title">Дополнительные товары</h2>
+          <ul class="addons__list">
+            <li class="addons__item addon-card">
+              <div class="addon-card__main-wrapper">
+                <h3 class="addon-card__title">Сахарозаменитель</h3>
+                <div class="addon-card__sub-wrapper">
+                  <p class="addon-card__description">1 упаковка (100 г)</p>
+                  <p class="addon-card__price">200 Р.</p>
+                </div>
+              </div>
+              <a href="#" class="addon-card__button-order button">Заказать</a>
+            </li>
+            <li class="addons__item addon-card">
+              <div class="addon-card__main-wrapper">
+                <h3 class="addon-card__title">Питьевая вода</h3>
+                <div class="addon-card__sub-wrapper">
+                  <p class="addon-card__description">5 литров</p>
+                  <p class="addon-card__price">50 Р.</p>
+                </div>
+              </div>
+              <a href="#" class="addon-card__button-order button">Заказать</a>
+            </li>
+            <li class="addons__item addon-card">
+              <div class="addon-card__main-wrapper">
+                <h3 class="addon-card__title">Молоко</h3>
+                <div class="addon-card__sub-wrapper">
+                  <p class="addon-card__description">1 литр</p>
+                  <p class="addon-card__price">100 Р.</p>
+                </div>
+              </div>
+              <a href="#" class="addon-card__button-order button">Заказать</a>
+            </li>
+            <li class="addons__item addon-card">
+              <div class="addon-card__main-wrapper">
+                <h3 class="addon-card__title">Витамины</h3>
+                <div class="addon-card__sub-wrapper">
+                  <p class="addon-card__description">1 упаковка (30 г)</p>
+                  <p class="addon-card__price">300 Р.</p>
+                </div>
+              </div>
+              <a href="#" class="addon-card__button-order button">Заказать</a>
+            </li>
+          </ul>
         </div>
+        <section class="addons__order-all order-all">
+          <div class="order-all__wrapper">
+            <div class="block-DELETE"></div> <!-- DELETE -->
+            <h3 class="order-all__text">Закажите все и получите чехол для кота в подарок!</h3>
+          </div>
+        </section>
       </div>
     </section>
+
   </main>
   <footer class="footer">
-    <div class="container">
-      <section class="dealers">
-        <div class="container">
-          <h2 class="visually-hidden">Наш Адрес</h2>
-          <h3 class="dealers__invite">Приглашаем
-            к сотрудничеству дилеров!</h3>
-          <p class="dealers__address">ул. Большая
-            Конюшенная, д. 19/8
-            Санкт-Петербург</p>
-          <div class="dealers__map-wrapper">
-            <img class="dealers__map-image" src="img/bg-map-mobile@1x.png"
-              alt="Магазин Cat Energy на карте Санкт-Петербурга">
-          </div>
+    <section class="dealers">
+      <div class="dealers__inner">
+        <h2 class="visually-hidden">Наш Адрес</h2>
+        <h3 class="dealers__invite">Приглашаем <br>
+          к сотрудничеству дилеров!</h3>
+        <p class="dealers__address">ул. Большая
+          Конюшенная, д. 19/8
+          Санкт-Петербург</p>
+      </div>
+      <div class="dealers__map-wrapper">
+        <div style="position:relative;overflow:hidden;">
+          <a href="https://yandex.com/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+            style="color:#eee;font-size:12px;position:absolute;top:0px;">Saint Petersburg</a>
+          <a href="https://yandex.com/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323761%2C59.938560&sll=10.854186%2C49.182076&sspn=126.210938%2C45.103620&utm_medium=mapframe&utm_source=maps&z=17"
+            style="color:#eee;font-size:12px;position:absolute;top:14px;">Yandex.Maps</a>
+          <iframe class="dealers__interactive-map" src="https://yandex.com/map-widget/v1/-/CCQpMJf7CC" frameborder="1"
+            allowfullscreen="true"></iframe>
         </div>
-      </section>
-      <div class="footer__main-wrapper">
+        <img class="dealers__map-image" src="img/bg-map-mobile@1x.png"
+          alt="Магазин Cat Energy на карте Санкт-Петербурга" width="320" height="362">
+      </div>
+    </section>
+    <div class="footer__main-wrapper">
+      <div class="footer__inner-wrapper">
         <div class="footer__logo-wrapper">
-          <a class="footer__logo-link" href="index.html" aria-label="Ссылка на главную страницу">
+          <a class="footer__logo-link" href="index.html">
             <img class="footer__logo-img" src="img/logo-footer.svg" alt="Логотип Cat Energy" width="128" height="24">
           </a>
         </div>
@@ -283,17 +325,17 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Магазин Cat Energy в Vkontakte">
-                <img class="social__icon" src="https://via.placeholder.com/22x22" width="22" height="22">
+                <img class="social__icon" src="img/icon-vk.svg" width="23" height="13">
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Магазин Cat Energy в Instagram">
-                <img class="social__icon" src="https://via.placeholder.com/22x22" width="22" height="22">
+                <img class="social__icon" src="img/icon-insta.svg" width="16" height="16">
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Магазин Cat Energy в Facebook">
-                <img class="social__icon" src="https://via.placeholder.com/22x22" width="22" height="22">
+                <img class="social__icon" src="img/icon-fb.svg" width="10" height="18">
               </a>
             </li>
           </ul>
@@ -301,9 +343,8 @@
         <div class="footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
             aria-label="Ссылка на сайт HTML Academy">
-            <span class="copyright__text">HTML Academy</span>
-            <img class="copyright__logo" src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy" width="27"
-              height="34">
+            <p class="copyright__text">HTML Academy</p>
+            <img class="copyright__logo" src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="34">
           </a>
         </div>
       </div>

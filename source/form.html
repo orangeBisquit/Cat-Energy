@@ -9,7 +9,7 @@
 
 <body class="page-body">
   <header class="header">
-    <div class="container">
+    <div class="header__inner">
       <div class="header__wrapper-top">
         <a class="header__logo" href="index.html" aria-label="Ссылка на главную страницу">
           <img class="header__logo-img" src="img/logo-mobile.svg" alt="Логотип магазина Cat Energy" width="190"
@@ -17,7 +17,7 @@
         </a>
         <button class="header__toggle" type="button" aria-label="Открыть/Закрыть навигацию по сайту"></button>
       </div>
-      <nav class="main-nav">
+      <nav class="header__nav main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
@@ -57,7 +57,7 @@
               <input class="form__data-input" id="cat-age" name="cat-age" type="number" placeholder="7">
             </p>
           </fieldset>
-          <fieldset class="form__category">
+          <fieldset class="form__category form__category--goal form__category--border-special ">
             <p class="form__option">
               <input class="form__option-input" id="weight-loss" type="radio" name="goal" value="weight-loss">
               <label class="form__option-label" for="weight-loss">Похудение</label>
@@ -71,8 +71,8 @@
               <label class="form__option-label" for="need-advice">Не знаю (Нужен ваш совет)</label>
             </p>
           </fieldset>
-          <fieldset class="form__category">
-            <legend class="form__legend">Контактные данные
+          <fieldset class="form__category form__category--border-special">
+            <legend class="form__legend form__legend--green">Контактные данные <br>
               (владельца кота)</legend>
             <p class="form__data-field form__data-field--email">
               <label class="form__data-label" for="owner-email">E-mail:*</label>
@@ -86,15 +86,15 @@
             </p>
           </fieldset>
           <fieldset class="form__category">
-            <legend class="form__legend">Комментарий</legend>
+            <legend class="form__legend form__legend--green">Комментарий</legend>
             <p class="form__data-field">
               <label for="owner-comment" class="visually-hidden">Дополнительная информация:</label>
-              <textarea class="form__data-input" id="owner-comment" name="owner-comment"
+              <textarea class="form__data-input form__data-input--comment" id="owner-comment" name="owner-comment"
                 placeholder="Расскажите обо всех повадках кота"></textarea>
             </p>
           </fieldset>
           <fieldset class="form__category">
-            <legend class="form__legend">Дополнительно</legend>
+            <legend class="form__legend form__legend--green">Дополнительно</legend>
             <p class="form__option">
               <input class="form__option-input" id="sweetener" type="checkbox" name="addons" value="sweetener">
               <label class="form__option-label" for="sweetener">Сахарозаменитель</label>
@@ -120,24 +120,32 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="container">
-      <section class="dealers">
-        <div class="container">
-          <h2 class="visually-hidden">Наш Адрес</h2>
-          <h3 class="dealers__invite">Приглашаем
-            к сотрудничеству дилеров!</h3>
-          <p class="dealers__address">ул. Большая
-            Конюшенная, д. 19/8
-            Санкт-Петербург</p>
-          <div class="dealers__map-wrapper">
-            <img class="dealers__map-image" src="img/bg-map-mobile@1x.png"
-              alt="Магазин Cat Energy на карте Санкт-Петербурга">
-          </div>
+    <section class="dealers">
+      <div class="dealers__inner">
+        <h2 class="visually-hidden">Наш Адрес</h2>
+        <h3 class="dealers__invite">Приглашаем <br>
+          к сотрудничеству дилеров!</h3>
+        <p class="dealers__address">ул. Большая
+          Конюшенная, д. 19/8
+          Санкт-Петербург</p>
+      </div>
+      <div class="dealers__map-wrapper">
+        <div style="position:relative;overflow:hidden;">
+          <a href="https://yandex.com/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+            style="color:#eee;font-size:12px;position:absolute;top:0px;">Saint Petersburg</a>
+          <a href="https://yandex.com/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323761%2C59.938560&sll=10.854186%2C49.182076&sspn=126.210938%2C45.103620&utm_medium=mapframe&utm_source=maps&z=17"
+            style="color:#eee;font-size:12px;position:absolute;top:14px;">Yandex.Maps</a>
+          <iframe class="dealers__interactive-map" src="https://yandex.com/map-widget/v1/-/CCQpMJf7CC" frameborder="1"
+            allowfullscreen="true"></iframe>
         </div>
-      </section>
-      <div class="footer__main-wrapper">
+        <img class="dealers__map-image" src="img/bg-map-mobile@1x.png"
+          alt="Магазин Cat Energy на карте Санкт-Петербурга" width="320" height="362">
+      </div>
+    </section>
+    <div class="footer__main-wrapper">
+      <div class="footer__inner-wrapper">
         <div class="footer__logo-wrapper">
-          <a class="footer__logo-link" href="index.html" aria-label="Ссылка на главную страницу">
+          <a class="footer__logo-link" href="index.html">
             <img class="footer__logo-img" src="img/logo-footer.svg" alt="Логотип Cat Energy" width="128" height="24">
           </a>
         </div>
@@ -145,17 +153,17 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Магазин Cat Energy в Vkontakte">
-                <img class="social__icon" src="https://via.placeholder.com/22x22" width="22" height="22">
+                <img class="social__icon" src="img/icon-vk.svg" width="23" height="13">
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Магазин Cat Energy в Instagram">
-                <img class="social__icon" src="https://via.placeholder.com/22x22" width="22" height="22">
+                <img class="social__icon" src="img/icon-insta.svg" width="16" height="16">
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Магазин Cat Energy в Facebook">
-                <img class="social__icon" src="https://via.placeholder.com/22x22" width="22" height="22">
+                <img class="social__icon" src="img/icon-fb.svg" width="10" height="18">
               </a>
             </li>
           </ul>
@@ -163,9 +171,8 @@
         <div class="footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
             aria-label="Ссылка на сайт HTML Academy">
-            <span class="copyright__text">HTML Academy</span>
-            <img class="copyright__logo" src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy" width="27"
-              height="34">
+            <p class="copyright__text">HTML Academy</p>
+            <img class="copyright__logo" src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="34">
           </a>
         </div>
       </div>

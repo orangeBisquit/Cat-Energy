@@ -1,10 +1,16 @@
 .copyright__link {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   text-decoration: none;
 }
 .copyright__text {
   font-family: $font-arial;
+  vertical-align: middle;
   font-size: 16px;
   line-height: 18px;
+  color: $basic-grey-dark;
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
 }

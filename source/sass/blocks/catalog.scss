@@ -2,11 +2,19 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+  }
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+  }
 }
 .catalog__item {
   margin-bottom: 25px;
-}
-.catalog__item--all {
-  outline: 1px solid red;
-  padding: 25px 0;
+  &::after {
+    @include top-border-grey;
+  }
 }

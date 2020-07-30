@@ -6,6 +6,12 @@
 .container {
   width: 280px;
   margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }
 .visually-hidden {
   position: absolute;

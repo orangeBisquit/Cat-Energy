@@ -3,6 +3,42 @@
   grid-template-rows: min-content 1fr min-content;
   margin: 0;
   padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
+}
+.page-body__promo {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+  }
+}
+.page-body__category {
+  margin-bottom: 27px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+}
+.page-body__advantages {
+  margin-bottom: 30px;
+}
+.page-body__catalog {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+}
+.page-body__addons {
+  margin-bottom: 39px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 69px;
+  }
+}
+.page-body__order-all {
+  margin-bottom: 35px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
 }
