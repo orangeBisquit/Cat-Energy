@@ -1,3 +1,7 @@
 .content-header__title {
+  position: relative;
   padding: 27px 0 41px;
+  &::after {
+    @include top-border-grey;
+  }
 }

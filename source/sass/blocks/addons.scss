@@ -1,13 +1,73 @@
+.addons {
+  width: 100vw;
+  @media (min-width: $tablet-width) {
+    border-top: 2px solid $basic-green;
+  }
+}
+.addons__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 auto;
+    width: 1220px;
+  }
+}
+.addons__inner {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 39px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 69px;
+    width: 708px;
+  }
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-right: 79px;
+    width: 896px;
+  }
+}
 .addons__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  @media (min-width: $tablet-width) {
+    border: 1px solid $stat-list-border;
+  }
 }
+.addons__item {
+  border-bottom: 1px solid green;
+}
+
 .addons__title {
+  position: relative;
   margin: 0;
   border-bottom: 1px solid $stat-list-border;
   padding-bottom: 25px;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    top: -24px;
+    z-index: 5;
+    margin-bottom: 50px;
+    border: 0;
+    padding: 0 30px;
+    font-size: 36px;
+    line-height: 36px;
+    background-color: $basic-white;
+  }
+  &::after {
+    display: block;
+    content: "";
+    background-color: #68b738;
+    width: calc((100vw - 280px) / 2 + 10%);
+    height: 3px;
+    position: absolute;
+    top: 25%;
+    left: calc(90%);
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }

@@ -38,7 +38,7 @@
         <h1 class="content-header__title title">Каталог продукции</h1>
       </div>
     </section>
-    <section class="catalog">
+    <section class=" page-body__catalog">
       <div class="container">
         <ul class="catalog__list">
           <li class="catalog__item product-card">
@@ -63,7 +63,9 @@
                 </table>
               </div>
             </div>
-            <a class="product-card__button button" href="#">Заказать</a>
+            <div class="product-card__inner-bottom">
+              <a class="product-card__button button" href="#">Заказать</a>
+            </div>
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__inner-top">
@@ -87,7 +89,9 @@
                 </table>
               </div>
             </div>
-            <a class="product-card__button button" href="#">Заказать</a>
+            <div class="product-card__inner-bottom">
+              <a class="product-card__button button" href="#">Заказать</a>
+            </div>
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__inner-top">
@@ -111,7 +115,9 @@
                 </table>
               </div>
             </div>
-            <a class="product-card__button button" href="#">Заказать</a>
+            <div class="product-card__inner-bottom">
+              <a class="product-card__button button" href="#">Заказать</a>
+            </div>
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__inner-top">
@@ -135,7 +141,9 @@
                 </table>
               </div>
             </div>
-            <a class="product-card__button button" href="#">Заказать</a>
+            <div class="product-card__inner-bottom">
+              <a class="product-card__button button" href="#">Заказать</a>
+            </div>
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__inner-top">
@@ -159,7 +167,9 @@
                 </table>
               </div>
             </div>
-            <a class="product-card__button button" href="#">Заказать</a>
+            <div class="product-card__inner-bottom">
+              <a class="product-card__button button" href="#">Заказать</a>
+            </div>
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__inner-top">
@@ -183,7 +193,9 @@
                 </table>
               </div>
             </div>
-            <a class="product-card__button button" href="#">Заказать</a>
+            <div class="product-card__inner-bottom">
+              <a class="product-card__button button" href="#">Заказать</a>
+            </div>
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__inner-top">
@@ -207,64 +219,77 @@
                 </table>
               </div>
             </div>
-            <a class="product-card__button button" href="#">Заказать</a>
+            <div class="product-card__inner-bottom">
+              <a class="product-card__button button" href="#">Заказать</a>
+            </div>
           </li>
-          <li class="catalog__item catalog__item--all">
-            <button class="catalog__button-plus" type="button" aria-label="Показать все товары"></button>
-            <h3 class="catalog__title-all">Показать еще 100500 товаров</h3>
-            <p class="catalog__description-all">На самом деле вкусов гораздо больше!</p>
-            <a href="#" class="catalog__button-all button button--grey">Показать все</a>
+          <li class="catalog__item product-all">
+            <div class="product-all__inner">
+              <button class="product-all__button-plus" type="button" aria-label="Показать все товары"></button>
+              <h3 class="product-all__title">Показать еще 100500 товаров</h3>
+              <p class="product-all__description">На самом деле вкусов гораздо больше!</p>
+              <a href="#" class="product-all__button-all button button--grey">Показать все</a>
+            </div>
           </li>
         </ul>
       </div>
     </section>
-    <section class="addons">
-      <div class="container">
-        <h2 class="addons__title">Дополнительные товары</h2>
-        <ul class="addons__list">
-          <li class="addons__item addon-card">
-            <h3 class="addon-card__title">Сахарозаменитель</h3>
-            <div class="addon-card__text-wrapper">
-              <p class="addon-card__description">1 упаковка (100 г)</p>
-              <p class="addon-card__price">200 Р.</p>
-            </div>
-            <a href="#" class="addon-card__button-order button">Заказать</a>
-          </li>
-          <li class="addons__item addon-card">
-            <h3 class="addon-card__title">Питьевая вода</h3>
-            <div class="addon-card__text-wrapper">
-              <p class="addon-card__description">5 литров</p>
-              <p class="addon-card__price">50 Р.</p>
-            </div>
-            <a href="#" class="addon-card__button-order button">Заказать</a>
-          </li>
-          <li class="addons__item addon-card">
-            <h3 class="addon-card__title">Молоко</h3>
-            <div class="addon-card__text-wrapper">
-              <p class="addon-card__description">1 литр</p>
-              <p class="addon-card__price">100 Р.</p>
-            </div>
-            <a href="#" class="addon-card__button-order button">Заказать</a>
-          </li>
-          <li class="addons__item addon-card">
-            <h3 class="addon-card__title">Витамины</h3>
-            <div class="addon-card__text-wrapper">
-              <p class="addon-card__description">1 упаковка (30 г)</p>
-              <p class="addon-card__price">300 Р.</p>
-            </div>
-            <a href="#" class="addon-card__button-order button">Заказать</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="order-all">
-      <div class="container">
-        <div class="order-all__wrapper">
-          <div class="block-DELETE"></div> <!-- DELETE -->
-          <h3 class="order-all__text">Закажите все и получите чехол для кота в подарок!</h3>
+    <section class="addons page-body__addons">
+      <div class="addons__wrapper">
+        <div class="addons__inner">
+          <h2 class="addons__title">Дополнительные товары</h2>
+          <ul class="addons__list">
+            <li class="addons__item addon-card">
+              <div class="addon-card__main-wrapper">
+                <h3 class="addon-card__title">Сахарозаменитель</h3>
+                <div class="addon-card__sub-wrapper">
+                  <p class="addon-card__description">1 упаковка (100 г)</p>
+                  <p class="addon-card__price">200 Р.</p>
+                </div>
+              </div>
+              <a href="#" class="addon-card__button-order button">Заказать</a>
+            </li>
+            <li class="addons__item addon-card">
+              <div class="addon-card__main-wrapper">
+                <h3 class="addon-card__title">Питьевая вода</h3>
+                <div class="addon-card__sub-wrapper">
+                  <p class="addon-card__description">5 литров</p>
+                  <p class="addon-card__price">50 Р.</p>
+                </div>
+              </div>
+              <a href="#" class="addon-card__button-order button">Заказать</a>
+            </li>
+            <li class="addons__item addon-card">
+              <div class="addon-card__main-wrapper">
+                <h3 class="addon-card__title">Молоко</h3>
+                <div class="addon-card__sub-wrapper">
+                  <p class="addon-card__description">1 литр</p>
+                  <p class="addon-card__price">100 Р.</p>
+                </div>
+              </div>
+              <a href="#" class="addon-card__button-order button">Заказать</a>
+            </li>
+            <li class="addons__item addon-card">
+              <div class="addon-card__main-wrapper">
+                <h3 class="addon-card__title">Витамины</h3>
+                <div class="addon-card__sub-wrapper">
+                  <p class="addon-card__description">1 упаковка (30 г)</p>
+                  <p class="addon-card__price">300 Р.</p>
+                </div>
+              </div>
+              <a href="#" class="addon-card__button-order button">Заказать</a>
+            </li>
+          </ul>
         </div>
+        <section class="addons__order-all order-all">
+          <div class="order-all__wrapper">
+            <div class="block-DELETE"></div> <!-- DELETE -->
+            <h3 class="order-all__text">Закажите все и получите чехол для кота в подарок!</h3>
+          </div>
+        </section>
       </div>
     </section>
+
   </main>
   <footer class="footer">
     <section class="dealers">

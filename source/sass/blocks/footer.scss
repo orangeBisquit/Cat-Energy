@@ -15,6 +15,9 @@
     align-items: center;
     width: 708px;
   }
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 .footer__logo-wrapper {
   border-bottom: 1px solid $border-color-special;
