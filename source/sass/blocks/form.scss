@@ -1,3 +1,6 @@
+.form {
+  padding-bottom: 32px;
+}
 .form__category {
   margin: 0;
   border: 0;
@@ -75,7 +78,13 @@
   }
 }
 .form__button-submit {
+  margin-top: 20px;
   width: 100%;
+}
+.form__required-fields {
+  display: block;
+  margin-top: 21px;
+  text-align: center;
 }
 // Pseudo Inputs - Hide Default
 .form__option-input {
