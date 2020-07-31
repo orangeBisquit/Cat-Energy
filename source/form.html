@@ -39,54 +39,64 @@
       </div>
     </section>
     <section class="custom-program">
-      <div class="container">
+      <div class="container container--special">
         <p class="custom-program__description">Заполните анкету и мы подберем
           программу питания для вашего кота</p>
         <form class="custom-program__form form" method="post" action="https://echo.htmlacademy.ru">
-          <fieldset class="form__category">
-            <p class="form__data-field">
-              <label class="form__data-label" for="cat-name">Имя:*</label>
-              <input class="form__data-input" id="cat-name" name="cat-name" type="text" placeholder="БАРСИК" required>
-            </p>
-            <p class="form__data-field">
-              <label class="form__data-label" for="cat-weight">Вес (кг):*</label>
-              <input class="form__data-input" id="cat-weight" name="cat-weight" type="number" placeholder="7" required>
-            </p>
-            <p class="form__data-field">
-              <label class="form__data-label" for="cat-age">Возраст (лет):</label>
-              <input class="form__data-input" id="cat-age" name="cat-age" type="number" placeholder="7">
-            </p>
-          </fieldset>
-          <fieldset class="form__category form__category--goal form__category--border-special ">
-            <p class="form__option">
-              <input class="form__option-input" id="weight-loss" type="radio" name="goal" value="weight-loss">
-              <label class="form__option-label" for="weight-loss">Похудение</label>
-            </p>
-            <p class="form__option">
-              <input class="form__option-input" id="weight-gain" type="radio" name="goal" value="weight-gain">
-              <label class="form__option-label" for="weight-gain">Набор массы</label>
-            </p>
-            <p class="form__option">
-              <input class="form__option-input" id="need-advice" type="radio" name="goal" value="need-advice">
-              <label class="form__option-label" for="need-advice">Не знаю (Нужен ваш совет)</label>
-            </p>
-          </fieldset>
+          <div class="form__grid-wrapper">
+            <fieldset class="form__category">
+              <p class="form__data-field">
+                <label class="form__data-label" for="cat-name">Имя:*</label>
+                <input class="form__data-input form__data-input--name" id="cat-name" name="cat-name" type="text"
+                  placeholder="БАРСИК" required>
+              </p>
+              <p class="form__data-field">
+                <label class="form__data-label" for="cat-weight">Вес (кг):*</label>
+                <input class="form__data-input form__data-input--weight" id="cat-weight" name="cat-weight" type="number"
+                  placeholder="7" required>
+              </p>
+              <p class="form__data-field">
+                <label class="form__data-label" for="cat-age">Возраст (лет):</label>
+                <input class="form__data-input" id="cat-age" name="cat-age" type="number" placeholder="7">
+              </p>
+            </fieldset>
+            <fieldset class="form__category form__category--goal form__category--border-special ">
+              <p class="form__option">
+                <input class="form__option-input" id="weight-loss" type="radio" name="goal" value="weight-loss" checked>
+                <label class="form__option-label" for="weight-loss">Похудение</label>
+              </p>
+              <p class="form__option">
+                <input class="form__option-input" id="weight-gain" type="radio" name="goal" value="weight-gain">
+                <label class="form__option-label" for="weight-gain">Набор массы</label>
+              </p>
+              <p class="form__option">
+                <input class="form__option-input" id="need-advice" type="radio" name="goal" value="need-advice">
+                <label class="form__option-label" for="need-advice">Не знаю (Нужен ваш совет)</label>
+              </p>
+            </fieldset>
+          </div>
           <fieldset class="form__category form__category--border-special">
-            <legend class="form__legend form__legend--green">Контактные данные <br>
-              (владельца кота)</legend>
-            <p class="form__data-field form__data-field--email">
-              <label class="form__data-label" for="owner-email">E-mail:*</label>
-              <input class="form__data-input" id="owner-email" name="owner-email" type="email"
-                placeholder="kuklachev@gmail.com" required>
-            </p>
-            <p class="form__data-field form__data-field--phone">
-              <label class="form__data-label" for="owner-phone">Телефон:*</label>
-              <input class="form__data-input" id="owner-phone" name="owner-phone" type="tel"
-                placeholder="8 (960) 900-60-90" required>
-            </p>
+            <div class="form__legend-wrapper">
+              <legend class="form__legend form__legend--green">Контактные данные <br>
+                (владельца кота)</legend>
+            </div>
+            <div class="form__contacts-wrapper">
+              <p class="form__data-field form__data-field--email">
+                <label class="form__data-label" for="owner-email">E-mail:*</label>
+                <input class="form__data-input" id="owner-email" name="owner-email" type="email"
+                  placeholder="kuklachev@gmail.com" required>
+              </p>
+              <p class="form__data-field form__data-field--phone">
+                <label class="form__data-label" for="owner-phone">Телефон:*</label>
+                <input class="form__data-input" id="owner-phone" name="owner-phone" type="tel"
+                  placeholder="8 (960) 900-60-90" required>
+              </p>
+            </div>
           </fieldset>
           <fieldset class="form__category">
-            <legend class="form__legend form__legend--green">Комментарий</legend>
+            <div class="form__legend-wrapper">
+              <legend class="form__legend form__legend--green">Комментарий</legend>
+            </div>
             <p class="form__data-field">
               <label for="owner-comment" class="visually-hidden">Дополнительная информация:</label>
               <textarea class="form__data-input form__data-input--comment" id="owner-comment" name="owner-comment"
@@ -94,40 +104,49 @@
             </p>
           </fieldset>
           <fieldset class="form__category">
-            <legend class="form__legend form__legend--green">Дополнительно</legend>
-            <p class="form__option">
-              <input class="form__option-input" id="sweetener" type="checkbox" name="addons" value="sweetener">
-              <label class="form__option-label" for="sweetener">Сахарозаменитель</label>
-            </p>
-            <p class="form__option">
-              <input class="form__option-input" id="drinking-water" type="checkbox" name="addons"
-                value="drinking-water">
-              <label class="form__option-label" for="drinking-water">Питьевая вода</label>
-            </p>
-            <p class="form__option">
-              <input class="form__option-input" id="milk" type="checkbox" name="addons" value="milk">
-              <label class="form__option-label" for="milk">Молоко</label>
-            </p>
-            <p class="form__option">
-              <input class="form__option-input" id="vitamins" type="checkbox" name="addons" value="vitamins">
-              <label class="form__option-label" for="vitamins">Витамины</label>
-            </p>
+            <div class="form__legend-wrapper">
+              <legend class="form__legend form__legend--green">Дополнительно</legend>
+            </div>
+            <div class="form__addons-wrapper">
+              <p class="form__option form__option--addon">
+                <input class="form__option-input" id="sweetener" type="checkbox" name="addons" value="sweetener"
+                  checked>
+                <label class="form__option-label" for="sweetener">Сахарозаменитель</label>
+              </p>
+              <p class="form__option form__option--addon">
+                <input class="form__option-input" id="drinking-water" type="checkbox" name="addons"
+                  value="drinking-water">
+                <label class="form__option-label" for="drinking-water">Питьевая вода</label>
+              </p>
+              <p class="form__option form__option--addon">
+                <input class="form__option-input" id="milk" type="checkbox" name="addons" value="milk">
+                <label class="form__option-label" for="milk">Молоко</label>
+              </p>
+              <p class="form__option form__option--addon">
+                <input class="form__option-input" id="vitamins" type="checkbox" name="addons" value="vitamins">
+                <label class="form__option-label" for="vitamins">Витамины</label>
+              </p>
+            </div>
           </fieldset>
-          <button class="form__button-submit button" type="submit">Отправить заявку</button>
-          <small class="form__required-fields">* — Обязательные поля</small>
+          <div class="form__submit-wrapper">
+            <button class="form__button-submit button" type="submit">Отправить заявку</button>
+            <small class="form__required-fields">* — Обязательные поля</small>
+          </div>
         </form>
       </div>
     </section>
   </main>
   <footer class="footer">
     <section class="dealers">
-      <div class="dealers__inner">
-        <h2 class="visually-hidden">Наш Адрес</h2>
-        <h3 class="dealers__invite">Приглашаем <br>
-          к сотрудничеству дилеров!</h3>
-        <p class="dealers__address">ул. Большая
-          Конюшенная, д. 19/8
-          Санкт-Петербург</p>
+      <div class="container">
+        <div class="dealers__inner">
+          <h2 class="visually-hidden">Наш Адрес</h2>
+          <h3 class="dealers__invite">Приглашаем <br>
+            к сотрудничеству дилеров!</h3>
+          <p class="dealers__address">ул. Большая
+            Конюшенная, д. 19/8
+            <span>Санкт-Петербург</span></p>
+        </div>
       </div>
       <div class="dealers__map-wrapper">
         <div style="position:relative;overflow:hidden;">
