@@ -22,7 +22,15 @@
     border: 1px solid $input-border;
     padding-left: 28px;
     padding-bottom: 5px;
+    }
   }
+  &--cat-info {
+    @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+    }
+    @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    }
   }
 }
 .form__legend-wrapper {
