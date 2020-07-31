@@ -152,14 +152,14 @@
     margin-bottom: 54px;
   }
   @media (min-width: $desktop-width) {
-   grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 .form__contacts-wrapper {
   @media (min-width: $desktop-width) {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   column-gap: 78px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 78px;
   }
 }
 .form__button-submit {
@@ -183,7 +183,7 @@
     align-self: center;
   }
   @media (min-width: $desktop-width) {
-   display: none;
+    display: none;
   }
 }
 .form__submit-wrapper {
@@ -230,7 +230,7 @@
   padding-left: 46px;
 }
 .form__option-input[type="checkbox"] + .form__option-label::before {
- @include beforeafter;
+  @include beforeafter;
   top: -5px;
   left: 0;
   width: 26px;
