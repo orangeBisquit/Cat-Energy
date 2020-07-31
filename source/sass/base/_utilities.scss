@@ -12,6 +12,14 @@
   @media (min-width: $desktop-width) {
     width: $desktop-width;
   }
+  &--special {
+    @media (min-width: $tablet-width) {
+      width: 630px;
+    }
+    @media (min-width: $desktop-width) {
+      width: 1220px;
+    }
+  }
 }
 .visually-hidden {
   position: absolute;
