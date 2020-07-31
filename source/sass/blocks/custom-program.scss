@@ -1,3 +1,13 @@
+.custom-program {
+  .container {
+    @media (min-width: $tablet-width) {
+      width: 631px;
+    }
+    @media (min-width: $desktop-width) {
+      width: 1220px;
+    }
+  }
+}
 .custom-program__description {
   margin: 0;
   margin-bottom: 39px;
