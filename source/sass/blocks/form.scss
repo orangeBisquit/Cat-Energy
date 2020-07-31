@@ -1,5 +1,5 @@
 .form {
-  padding-bottom: 32px;
+  padding-bottom: 32px; /* Commit checck */
 }
 .form__category {
   margin: 0;
@@ -193,11 +193,6 @@
     column-gap: 61px;
   }
 
-}
-.form__required-fields {
-  display: block;
-  margin-top: 21px;
-  text-align: center;
 }
 // Pseudo Inputs - Hide Default
 .form__option-input {
