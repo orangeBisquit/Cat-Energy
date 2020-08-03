@@ -12,33 +12,50 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 82px;
   }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+  }
 }
 .page-body__category {
-  margin-bottom: 27px;
+  margin-bottom: 29px;
   @media (min-width: $tablet-width) {
     margin-bottom: 45px;
   }
   @media (min-width: $desktop-width) {
-    margin-bottom: 50px;
+    margin-bottom: 71px;
   }
 }
 .page-body__advantages {
-  margin-bottom: 30px;
+  margin-bottom: 45px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 }
 .page-body__catalog {
   @media (min-width: $tablet-width) {
-    margin-bottom: 50px;
+    margin-bottom: 65px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 74px;
   }
 }
 .page-body__addons {
-  margin-bottom: 39px;
+  margin-bottom: 35px;
   @media (min-width: $tablet-width) {
-    margin-bottom: 69px;
+    margin-bottom: 76px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 88px;
   }
 }
 .page-body__order-all {
   margin-bottom: 35px;
   @media (min-width: $desktop-width) {
     margin-bottom: 69px;
+  }
+}
+.page-body__example {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
   }
 }

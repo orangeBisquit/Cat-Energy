@@ -43,8 +43,10 @@
         <ul class="catalog__list">
           <li class="catalog__item product-card">
             <div class="product-card__inner-top">
-              <img class="product-card__image" src="img/chicken-small-mobile@1x.jpg" alt="Cat Energy 500г с курицей"
-                width="140" height="112">
+              <div class="product-card__image-wrapper">
+                <img class="product-card__image" src="img/chicken-small-mobile@1x.jpg" alt="Cat Energy 500г с курицей"
+                  width="140" height="112">
+              </div>
               <div class="product-card__text-wrapper">
                 <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
                 <table class="product-card__data data-table">
@@ -69,8 +71,10 @@
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__inner-top">
-              <img class="product-card__image" src="img/chicken-big-mobile@1x.jpg" alt="Cat Energy 1000г с курицей"
-                width="140" height="112">
+              <div class="product-card__image-wrapper">
+                <img class="product-card__image" src="img/chicken-big-mobile@1x.jpg" alt="Cat Energy 1000г с курицей"
+                  width="140" height="112">
+              </div>
               <div class="product-card__text-wrapper">
                 <h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
                 <table class="product-card__data data-table">
@@ -95,8 +99,10 @@
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__inner-top">
-              <img class="product-card__image" src="img/fish-small-mobile@1x.jpg" alt="Cat Energy 500г с рыбкой"
-                width="140" height="112">
+              <div class="product-card__image-wrapper">
+                <img class="product-card__image" src="img/fish-small-mobile@1x.jpg" alt="Cat Energy 500г с рыбкой"
+                  width="140" height="112">
+              </div>
               <div class="product-card__text-wrapper">
                 <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
                 <table class="product-card__data data-table">
@@ -121,8 +127,10 @@
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__inner-top">
-              <img class="product-card__image" src="img/fish-big-mobile@1x.jpg" alt="Cat Energy 1000г с рыбкой"
-                width="140" height="112">
+              <div class="product-card__image-wrapper">
+                <img class="product-card__image" src="img/fish-big-mobile@1x.jpg" alt="Cat Energy 1000г с рыбкой"
+                  width="140" height="112">
+              </div>
               <div class="product-card__text-wrapper">
                 <h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
                 <table class="product-card__data data-table">
@@ -147,8 +155,10 @@
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__inner-top">
-              <img class="product-card__image" src="img/buckwheat-small-mobile@1x.jpg" alt="Cat Energy 500г с гречкой"
-                width="140" height="112">
+              <div class="product-card__image-wrapper">
+                <img class="product-card__image" src="img/buckwheat-small-mobile@1x.jpg" alt="Cat Energy 500г с гречкой"
+                  width="140" height="112">
+              </div>
               <div class="product-card__text-wrapper">
                 <h3 class="product-card__title">Cat Energy SLIM 500 г</h3>
                 <table class="product-card__data data-table">
@@ -173,8 +183,10 @@
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__inner-top">
-              <img class="product-card__image" src="img/buckwheat-big-mobile@1x.jpg" alt="Cat Energy 1000г с гречкой"
-                width="140" height="112">
+              <div class="product-card__image-wrapper">
+                <img class="product-card__image" src="img/buckwheat-big-mobile@1x.jpg" alt="Cat Energy 1000г с гречкой"
+                  width="140" height="112">
+              </div>
               <div class="product-card__text-wrapper">
                 <h3 class="product-card__title">Cat Energy SLIM 1000 г</h3>
                 <table class="product-card__data data-table">
@@ -199,8 +211,10 @@
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__inner-top">
-              <img class="product-card__image" src="img/rice-small-mobile@1x.jpg" alt="Cat Energy 500г с рисом"
-                width="140" height="112">
+              <div class="product-card__image-wrapper">
+                <img class="product-card__image" src="img/rice-small-mobile@1x.jpg" alt="Cat Energy 500г с рисом"
+                  width="140" height="112">
+              </div>
               <div class="product-card__text-wrapper">
                 <h3 class="product-card__title">Cat Energy SLIM 500 г</h3>
                 <table class="product-card__data data-table">
@@ -284,7 +298,7 @@
         <section class="addons__order-all order-all">
           <div class="order-all__wrapper">
             <div class="block-DELETE"></div> <!-- DELETE -->
-            <h3 class="order-all__text">Закажите все и получите чехол для кота в подарок!</h3>
+            <h3 class="order-all__text">Закажите все <br> и получите чехол для кота в подарок!</h3>
           </div>
         </section>
       </div>
@@ -293,13 +307,16 @@
   </main>
   <footer class="footer">
     <section class="dealers">
-      <div class="dealers__inner">
-        <h2 class="visually-hidden">Наш Адрес</h2>
-        <h3 class="dealers__invite">Приглашаем <br>
-          к сотрудничеству дилеров!</h3>
-        <p class="dealers__address">ул. Большая
-          Конюшенная, д. 19/8
-          Санкт-Петербург</p>
+      <div class="container">
+        <div class="dealers__inner dealers__inner--catalog">
+          <h2 class="visually-hidden">Наш Адрес</h2>
+          <h3 class="dealers__invite">Приглашаем <br>
+            к сотрудничеству дилеров!</h3>
+          <p class="dealers__address">ул. Большая
+            Конюшенная, д. 19/8
+            <span>Санкт-Петербург</span>
+          </p>
+        </div>
       </div>
       <div class="dealers__map-wrapper">
         <div style="position:relative;overflow:hidden;">
@@ -316,7 +333,7 @@
     </section>
     <div class="footer__main-wrapper">
       <div class="footer__inner-wrapper">
-        <div class="footer__logo-wrapper">
+        <div class="footer__logo-wrapper footer__logo-wrapper--catalog">
           <a class="footer__logo-link" href="index.html">
             <img class="footer__logo-img" src="img/logo-footer.svg" alt="Логотип Cat Energy" width="128" height="24">
           </a>

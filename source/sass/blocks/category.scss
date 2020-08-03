@@ -18,25 +18,47 @@
   padding: 30px 20px 20px;
   background-color: $basic-light;
   @media (min-width: $tablet-width) {
-    padding: 77px 52px 53px;
+    padding: 77px 52px 57px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-bottom: 58px;
   }
 }
 .category__img-outer {
   position: absolute;
   border-radius: 50%;
+  top: 24px;
+  left: 22px;
   width: 50px;
   height: 50px;
   background-color: $basic-green;
   @media (min-width: $tablet-width) {
     transform: scale(4);
-    right: 130px;
-    top: 170px;
+    left: auto;
+    top: 166px;
   }
   @media (min-width: $desktop-width) {
-    transform: scale(2.2);
-    top: 70px;
+    transform: scale(2);
+    top: 71px;
     right: auto;
-    left: 80px;
+    left: 77px;
+  }
+  &--slim {
+    @media (min-width: $tablet-width) {
+      top: 166px;
+      right: 137px;
+    }
+    @media (min-width: $desktop-width) {
+      top: 71px;
+    }
+  }
+  &--bulk {
+    @media (min-width: $tablet-width) {
+      right: 135px;
+    }
+    @media (min-width: $desktop-width) {
+      top: 71px;
+    }
   }
 }
 .category__img-inner {
@@ -73,7 +95,7 @@
   }
   @media (min-width: $desktop-width) {
     padding-left: 162px;
-    margin-bottom: 73px;
+    margin-bottom: 74px;
   }
 }
 .category__description {
@@ -84,19 +106,29 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  br {
+    display: none;
+  }
   @media (min-width: $tablet-width) {
     border: 0;
-    width: 342px;
+    width: 383px;
     font-size: 16px;
     line-height: 24px;
+    br {
+      display: block;
+    }
   }
   @media (min-width: $desktop-width) {
     width: auto;
     padding-bottom: 0;
+    br {
+      display: none;
+    }
   }
 }
 .category__link {
   display: inline-block;
+  position: relative;
   vertical-align: middle;
   margin-top: 19px;
   font-size: 16px;
@@ -105,7 +137,28 @@
   text-transform: uppercase;
   text-decoration: none;
   @media (min-width: $tablet-width) {
+    margin-top: 29px;
     font-size: 20px;
     line-height: 30px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-top: 27px;
+  }
+  &::after {
+    @include beforeafter;
+    top: 2px;
+    right: -40px;
+    width: 24px;
+    height: 10px;
+    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (min-width: $tablet-width) {
+      top: 9px;
+      right: -49px;
+    }
+    @media (min-width: $desktop-width) {
+      right: -51px;
+    }
   }
 }

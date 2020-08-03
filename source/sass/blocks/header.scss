@@ -14,8 +14,8 @@
 .header__wrapper-top {
   display: flex;
   margin: 0 auto;
-  padding: 12px 0 17px;
-  width: 277px;
+  padding: 11px 0 16px;
+  width: $mobile-width;
   align-items: center;
   position: relative;
   @media (min-width: $tablet-width) {
@@ -30,6 +30,7 @@
   height: 38px;
 }
 .header__toggle {
+  margin-right: 2px;
   margin-left: auto;
   border: 0;
   width: 18px;
@@ -37,6 +38,9 @@
   background-image: url("../../img/icon-close.svg");
   background-color: $basic-white;
   @media (min-width: $tablet-width) {
+    display: none;
+  }
+  &--no-js {
     display: none;
   }
 }

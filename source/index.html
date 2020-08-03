@@ -15,7 +15,8 @@
           <img class="header__logo-img" src="img/logo-mobile.svg" alt="Логотип магазина Cat Energy" width="190"
             height="38">
         </a>
-        <button class="header__toggle" type="button" aria-label="Открыть/Закрыть навигацию по сайту"></button>
+        <button class="header__toggle header__toggle--no-js" type="button"
+          aria-label="Открыть/Закрыть навигацию по сайту"></button>
       </div>
       <nav class="header__nav main-nav">
         <ul class="main-nav__list">
@@ -42,7 +43,7 @@
             <p class="promo__slogan">Занялся собой? Займись котом!</p>
             <img class="promo__image" src="img/index-can-mobile@1x.png" alt="Банка Cat Energy с курицей" width="280"
               height="270">
-            <a class="promo__button button" href="form.html">Подобрать программу</a>
+            <a class="promo__button button button-small" href="form.html">Подобрать программу</a>
           </div>
         </div>
       </div>
@@ -51,7 +52,7 @@
       <div class="container">
         <ul class="category__list">
           <li class="category__item">
-            <div class="category__img-outer">
+            <div class="category__img-outer category__img-outer--slim">
               <div class="category__img-inner category__img-inner--slim"></div>
             </div>
             <h2 class="category__title">Похудение</h2>
@@ -61,12 +62,13 @@
             <a class="category__link" href="catalog-slim.html">Каталог Slim</a>
           </li>
           <li class="category__item">
-            <div class="category__img-outer">
+            <div class="category__img-outer category__img-outer--bulk">
               <div class="category__img-inner category__img-inner--bulk"></div>
             </div>
             <h2 class="category__title">Набор массы</h2>
-            <p class="category__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
-              Pro поможет вашему коту нарастить необходимые
+            <p class="category__description">Заработать авторитет среди дворовых котов <br> и даже собак? Серия Cat
+              Energy
+              Pro поможет вашему коту нарастить необходимые <br>
               мышцы!</p>
             <a class="category__link" href="catalog-pro.html">Каталог Pro</a>
           </li>
@@ -79,7 +81,7 @@
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--eco">
             <p class="advantages__text">Функциональное питание содержит только полезные питательные вещества.</p>
-            <span class="advantages__item-count">1</span>
+            <span class="advantages__item-count advantages__item-count--special">1</span>
           </li>
           <li class="advantages__item advantages__item--ready-to-go">
             <p class="advantages__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
@@ -90,13 +92,13 @@
             <span class="advantages__item-count">3</span>
           </li>
           <li class="advantages__item advantages__item--fast-results">
-            <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему <br> вашего питомца!</p>
             <span class="advantages__item-count">4</span>
           </li>
         </ul>
       </div>
     </section>
-    <section class="example">
+    <section class="example page-body__example">
       <div class="example__inner">
         <div class="example__column">
           <div class="example__text-wrapper">
@@ -123,10 +125,15 @@
         </div>
         <div class="example__column">
           <div class="example__demo-wrapper">
-            <img class="example__demo-img" src="img/before-desktop@1x.png" alt="" width="311" height="232">
-            <!-- SOMETHING -->
-            <span>Было</span>
-            <span>Стало</span>
+            <img class="example__demo-img" src="img/before-mobile@1x.png" alt="" width="311" height="232">
+            <div class="example__slider progress-slider">
+              <button class="progress-slider__button" type="button">Было</button>
+              <div class="progress-slider__pseudo-outer">
+                <div class="progress-slider__pseudo-inner"></div>
+              </div>
+              <input class="progress-slider__range" type="range" min="0" max="100" value="50">
+              <button class="progress-slider__button" type="button">Стало</button>
+            </div>
           </div>
         </div>
       </div>
@@ -135,24 +142,21 @@
   <footer class="footer">
     <section class="dealers dealers--light">
       <div class="container">
-        <div class="dealers__inner">
+        <div class="dealers__inner dealers__inner--index">
           <h2 class="visually-hidden">Наш Адрес</h2>
           <h3 class="dealers__invite">Приглашаем <br>
             к сотрудничеству дилеров!</h3>
           <p class="dealers__address">ул. Большая
             Конюшенная, д. 19/8
-            <span>Санкт-Петербург</span></p>
+            <span>Санкт-Петербург</span>
+          </p>
         </div>
       </div>
       <div class="dealers__map-wrapper">
-        <div style="position:relative;overflow:hidden;">
-          <a href="https://yandex.com/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
-            style="color:#eee;font-size:12px;position:absolute;top:0px;">Saint Petersburg</a>
-          <a href="https://yandex.com/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323761%2C59.938560&sll=10.854186%2C49.182076&sspn=126.210938%2C45.103620&utm_medium=mapframe&utm_source=maps&z=17"
-            style="color:#eee;font-size:12px;position:absolute;top:14px;">Yandex.Maps</a>
-          <iframe class="dealers__interactive-map" src="https://yandex.com/map-widget/v1/-/CCQpMJf7CC" frameborder="1"
-            allowfullscreen="true"></iframe>
-        </div>
+        <iframe class="dealers__interactive-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2skg!4v1596449479606!5m2!1sen!2skg"
+          width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
         <img class="dealers__map-image" src="img/bg-map-mobile@1x.png"
           alt="Магазин Cat Energy на карте Санкт-Петербурга" width="320" height="362">
       </div>
@@ -168,17 +172,17 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Магазин Cat Energy в Vkontakte">
-                <img class="social__icon" src="img/icon-vk.svg" width="23" height="13">
+                <img class="social__icon social__icon--vk" src="img/icon-vk.svg" width="23" height="13">
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Магазин Cat Energy в Instagram">
-                <img class="social__icon" src="img/icon-insta.svg" width="16" height="16">
+                <img class="social__icon social__icon--insta" src="img/icon-insta.svg" width="16" height="16">
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Магазин Cat Energy в Facebook">
-                <img class="social__icon" src="img/icon-fb.svg" width="10" height="18">
+                <img class="social__icon social__icon--fb" src="img/icon-fb.svg" width="10" height="18">
               </a>
             </li>
           </ul>
