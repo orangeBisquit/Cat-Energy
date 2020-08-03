@@ -1,11 +1,17 @@
 .custom-program {
   .container {
     @media (min-width: $tablet-width) {
-      width: 631px;
+      width: 630px;
     }
     @media (min-width: $desktop-width) {
       width: 1220px;
     }
+  }
+  @media (min-width: $tablet-width) {
+    padding-bottom: 45px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-bottom: 56px;
   }
 }
 .custom-program__description {
@@ -16,6 +22,7 @@
   line-height: 18px;
   text-transform: uppercase;
   @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
     width: 330px;
     font-size: 20px;
     line-height: 30px;

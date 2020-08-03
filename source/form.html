@@ -35,13 +35,12 @@
   <main>
     <section class="content-header">
       <div class="container">
-        <h1 class="content-header__title title">Подбор программы</h1>
+        <h1 class="content-header__title content-header__title--form title">Подбор программы</h1>
       </div>
     </section>
     <section class="custom-program">
       <div class="container container--special">
-        <p class="custom-program__description">Заполните анкету и мы подберем
-          программу питания для вашего кота</p>
+        <p class="custom-program__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="custom-program__form form" method="post" action="https://echo.htmlacademy.ru">
           <div class="form__grid-wrapper">
             <fieldset class="form__category form__category--cat-info">
@@ -75,27 +74,27 @@
               </p>
             </fieldset>
           </div>
-          <fieldset class="form__category form__category--border-special">
+          <fieldset class="form__category form__category--contacts form__category--border-special">
             <div class="form__legend-wrapper">
-              <legend class="form__legend form__legend--green">Контактные данные <br>
+              <legend class="form__legend form__legend--contacts form__legend--green">Контактные данные <br>
                 (владельца кота)</legend>
             </div>
             <div class="form__contacts-wrapper">
               <p class="form__data-field form__data-field--email">
                 <label class="form__data-label" for="owner-email">E-mail:*</label>
-                <input class="form__data-input" id="owner-email" name="owner-email" type="email"
+                <input class="form__data-input form__data-input--email" id="owner-email" name="owner-email" type="email"
                   placeholder="kuklachev@gmail.com" required>
               </p>
               <p class="form__data-field form__data-field--phone">
                 <label class="form__data-label" for="owner-phone">Телефон:*</label>
-                <input class="form__data-input" id="owner-phone" name="owner-phone" type="tel"
+                <input class="form__data-input form__data-input--phone" id="owner-phone" name="owner-phone" type="tel"
                   placeholder="8 (960) 900-60-90" required>
               </p>
             </div>
           </fieldset>
-          <fieldset class="form__category">
+          <fieldset class="form__category form__category--comment">
             <div class="form__legend-wrapper">
-              <legend class="form__legend form__legend--green">Комментарий</legend>
+              <legend class="form__legend form__legend--comment  form__legend--green">Комментарий</legend>
             </div>
             <p class="form__data-field">
               <label for="owner-comment" class="visually-hidden">Дополнительная информация:</label>
@@ -103,9 +102,9 @@
                 placeholder="Расскажите обо всех повадках кота"></textarea>
             </p>
           </fieldset>
-          <fieldset class="form__category">
+          <fieldset class="form__category form__category--extra">
             <div class="form__legend-wrapper">
-              <legend class="form__legend form__legend--green">Дополнительно</legend>
+              <legend class="form__legend form__legend--extra form__legend--green">Дополнительно</legend>
             </div>
             <div class="form__addons-wrapper">
               <p class="form__option form__option--addon">
@@ -145,7 +144,8 @@
             к сотрудничеству дилеров!</h3>
           <p class="dealers__address">ул. Большая
             Конюшенная, д. 19/8
-            <span>Санкт-Петербург</span></p>
+            <span>Санкт-Петербург</span>
+          </p>
         </div>
       </div>
       <div class="dealers__map-wrapper">
