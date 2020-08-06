@@ -22,6 +22,12 @@
       left: auto;
       width: 50vw;
       height: 691px;
+      background-image: url("../../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: 0 100%;
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/index-background-desktop@2x.jpg");
+      }
     }
   }
   @media (min-width: $tablet-width) {
@@ -40,6 +46,11 @@
   width: 320px;
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 320px 305px;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/index-background-mobile@2x.jpg");
+  }
   @media (min-width: $tablet-width) {
     width: $tablet-width;
     background-image: none;
@@ -95,14 +106,12 @@
 }
 .promo__image {
   position: relative;
-  margin-bottom: 4px;
   width: 280px;
   height: 270px;
   @media (min-width: $tablet-width) {
-    order: 4;
-    margin-bottom: -181px;
-    bottom: 86px;
-    right: 37px;
+    margin-bottom: -109px;
+    bottom: 82px;
+    right: 82px;
     z-index: 2;
     width: 708px;
     height: auto;
@@ -110,9 +119,14 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     right: 20%;
-    bottom: 160px;
+    bottom: 169px;
     width: 552px;
     height: 499px;
+  }
+}
+.promo__picture {
+  @media (min-width: $tablet-width) {
+    order: 4;
   }
 }
 .promo__button {
