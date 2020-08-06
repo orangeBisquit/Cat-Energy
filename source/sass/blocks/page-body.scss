@@ -7,6 +7,9 @@
   overflow-x: hidden;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
+  @media (min-width: $tablet-width) {
+    padding-right: 30px;
+  }
 }
 .page-body__promo {
   @media (min-width: $desktop-width) {

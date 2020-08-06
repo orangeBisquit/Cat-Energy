@@ -114,6 +114,32 @@
     }
   }
 }
+.example__img-wrapper {
+  width: 708px;
+  height: auto;
+  display: flex;
+  @media (min-width: $tablet-width) {
+    transform: scale(0.85);
+  }
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: -44px;
+    left: 74px;
+    transform: scale(1);
+  }
+}
+.example__img-box {
+  width: 50%;
+  overflow: hidden;
+  &--before {
+    position: relative;
+    width: 50%;
+  }
+  &--after {
+    direction: rtl;
+    width: 50%;
+  }
+}
 .example__demo-img {
   position: relative;
   left: -20px;
@@ -121,7 +147,6 @@
   width: 320px;
   height: 240px;
   @media (min-width: $tablet-width) {
-    opacity: 0; /* DELETE */
     margin-bottom: -30px;
     width: 708px;
     height: 607px;

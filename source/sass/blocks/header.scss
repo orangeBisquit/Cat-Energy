@@ -3,12 +3,12 @@
     display: flex;
     justify-content: space-between;
     padding-top: 24px;
-    width: $tablet-width;
+    width: $content-tablet;
     margin: 0 auto;
   }
   @media (min-width: $desktop-width) {
     padding-top: 53px;
-    width: $desktop-width;
+    width: $content-desktop;
   }
 }
 .header__wrapper-top {
