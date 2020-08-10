@@ -19,13 +19,17 @@
               height="38">
           </picture>
         </a>
-        <button class="header__toggle header__toggle--no-js" type="button"
-          aria-label="Открыть/Закрыть навигацию по сайту"></button>
+        <button class="header__toggle nojs__header-toggle hamburger" type="button"
+          aria-label="Открыть/Закрыть навигацию по сайту">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
       <nav class="header__nav main-nav">
-        <ul class="main-nav__list">
+        <ul class="main-nav__list nojs__main-menu">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--special" href="#">Главная</a>
+            <a class="main-nav__link main-nav__link--special main-nav__link--special-current" href="#">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--special" href="catalog.html">Каталог продукции</a>
@@ -46,6 +50,13 @@
               питание для котов</h1>
             <p class="promo__slogan">Занялся собой? Займись котом!</p>
             <picture class="promo__picture">
+              <source type="image/webp" media="(min-width: 1300px)"
+                srcset="img/webp/index-can-desktop@1x.webp 1x, img/webp/index-can-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/webp/index-can-tablet@1x.webp 1x, img/webp/index-can-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/webp/index-can-mobile@1x.webp 1x, img/webp/index-can-mobile@2x.webp 2x">
+
               <source media="(min-width: 1300px)"
                 srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
               <source media="(min-width: 768px)"
@@ -137,12 +148,23 @@
           <div class="example__demo-wrapper">
             <div class="example__img-wrapper">
               <picture class="example__img-box example__img-box--before">
+                <source type="image/webp" media="(min-width: 1300px)"
+                  srcset="img/webp/before-desktop@1x.webp 1x, img/webp/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/webp/before-tablet@1x.webp 1x, img/webp/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/webp/before-mobile@1x.webp 1x, img/webp/before-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
                 <img class="example__demo-img example__demo-img--before" src="img/before-mobile@1x.png"
                   srcset="img/before-mobile@2x.png 2x" alt="Фото кота до начала диеты" width="311" height="232">
               </picture>
               <picture class="example__img-box example__img-box--after">
+                <source type="image/webp" media="(min-width: 1300px)"
+                  srcset="img/webp/after-desktop@1x.webp 1x, img/webp/after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/webp/after-tablet@1x.webp 1x, img/webp/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/webp/after-mobile@1x.webp 1x, img/webp/after-mobile@2x.webp 2x">
                 <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
                 <img class="example__demo-img example__demo-img--after" src="img/after-mobile@1x.png"
@@ -154,7 +176,7 @@
               <div class="progress-slider__pseudo-outer">
                 <div class="progress-slider__pseudo-inner"></div>
               </div>
-              <input class="progress-slider__range" type="range" min="0" max="100" step="0.1" value="50">
+              <input class="progress-slider__range" type="range" min="0" max="100" step="0.1" value="51">
               <button class="progress-slider__button progress-slider__button--after" type="button">Стало</button>
             </div>
           </div>
@@ -181,6 +203,13 @@
           width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
           tabindex="0"></iframe>
         <picture>
+          <source media="(min-width: 1300px)"
+            srcset="img/webp/bg-map-desktop@1x.webp 1x, img/webp/bg-map-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/webp/bg-map-tablet@1x.webp 1x, img/webp/bg-map-tablet@2x.webp 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/webp/bg-map-mobile@1x.webp 1x, img/webp/bg-map-mobile@2x.webp 2x">
+
           <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
           <img class=" dealers__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
@@ -200,17 +229,23 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Магазин Cat Energy в Vkontakte">
-                <img class="social__icon social__icon--vk" src="img/icon-vk.svg" width="23" height="13">
+                <svg class="social__icon social__icon--vk" width="23" height="13">
+                  <use xlink:href="img/icons/sprite.svg#icon-vk"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Магазин Cat Energy в Instagram">
-                <img class="social__icon social__icon--insta" src="img/icon-insta.svg" width="16" height="16">
+                <svg class="social__icon social__icon--insta" width="16" height="16">
+                  <use xlink:href="img/icons/sprite.svg#icon-insta"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Магазин Cat Energy в Facebook">
-                <img class="social__icon social__icon--fb" src="img/icon-fb.svg" width="10" height="18">
+                <svg class="social__icon social__icon--fb" width="10" height="18">
+                  <use xlink:href="img/icons/sprite.svg#icon-fb"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -219,13 +254,17 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
             aria-label="Ссылка на сайт HTML Academy">
             <p class="copyright__text">HTML Academy</p>
-            <img class="copyright__logo" src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="34">
+            <svg class="copyright__logo" src="img/icons/htmlacademy.svg" alt="Логотип HTML Academy" width="27"
+              height="34">
+              <use xlink:href="img/icons/sprite.svg#htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </div>
     </div>
   </footer>
   <script src="js/comparison-slider.js"></script>
+  <script src="js/hamburger.js"></script>
 </body>
 
 </html>

@@ -119,7 +119,7 @@
   height: auto;
   display: flex;
   @media (min-width: $tablet-width) {
-    transform: scale(0.85);
+    margin-left: 10px;
   }
   @media (min-width: $desktop-width) {
     position: relative;
@@ -129,15 +129,25 @@
   }
 }
 .example__img-box {
-  width: 50%;
-  overflow: hidden;
-  &--before {
-    position: relative;
-    width: 50%;
-  }
   &--after {
-    direction: rtl;
+    display: none;
+  }
+  @media (min-width: $tablet-width) {
     width: 50%;
+    overflow: hidden;
+    &--before {
+      position: relative;
+      left: 17px;
+      width: 46%;
+      height: 517px;
+    }
+    &--after {
+      display: inline;
+      position: relative;
+      left: 17px;
+      direction: rtl;
+      width: 54%;
+    }
   }
 }
 .example__demo-img {
@@ -149,7 +159,7 @@
   @media (min-width: $tablet-width) {
     margin-bottom: -30px;
     width: 708px;
-    height: 607px;
+    height: 517px;
   }
   @media (min-width: $desktop-width) {
     position: relative;
