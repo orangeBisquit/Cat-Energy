@@ -7,6 +7,15 @@
     justify-content: flex-end;
     align-items: flex-start;
   }
+  .copyright__logo {
+    fill: $special-grey-dark;
+  }
+  &:hover .copyright__logo {
+    fill: $basic-green;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 .copyright__text {
   font-family: $font-arial;

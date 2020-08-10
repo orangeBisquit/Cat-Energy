@@ -138,7 +138,22 @@
   }
 }
 .form__data-field {
+  position: relative;
   margin-left: 1px;
+}
+.form__data-field-icon {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    &--mail {
+      top: 20px;
+    }
+}
+.form__data-input:focus + .form__data-field-icon {
+  fill: $basic-green;
+}
+.form__data-input:focus:invalid + .form__data-field-icon {
+  fill: $color-error;
 }
 .form__option {
   margin-bottom: 25px;
@@ -176,6 +191,20 @@
   padding-left: 17px;
   padding-bottom: 13px;
   min-height: 45px;
+  font-family: $font-oswald;
+  font-size: 16px;
+  line-height: 18px;
+  &:focus {
+    border: 2px solid $basic-grey-dark;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    outline: 0;
+    &:invalid {
+    border: 2px solid $color-error;
+    outline: 0;
+  }
+  }
   &::placeholder {
     font-family: $font-oswald;
     font-size: 16px;
@@ -191,19 +220,34 @@
     min-height: 52px;
     padding-top: 19px;
     padding-bottom: 10px;
+    &:focus {
+      padding-top: 18px;
+      padding-bottom: 9px;
+    }
   }
   &--comment {
     padding-top: 13px;
     padding-left: 14px;
     min-height: 150px;
+    &:focus {
+      padding-top: 12px;
+      padding-left: 13px;
+    }
     @media (min-width: $tablet-width) {
       padding-top: 10px;
       padding-left: 18px;
       min-height: 174px;
+      &:focus {
+        padding-top: 9px;
+        padding-left: 17px;
+      }
   }
   }
   &--email {
     padding-left: 19px;
+    &:focus {
+      padding-left: 18px;
+    }
   }
 }
 .form__addons-wrapper {
@@ -299,7 +343,7 @@
   }
 }
 .form__option-input[type="radio"]:checked + .form__option-label::before {
-  background-image: url("../../img/radio-button.svg");
+  background-image: url("../../img/icons/radio-button.svg");
   background-size: 14px 14px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -307,6 +351,14 @@
     background-size: 18px 18px;
   }
 }
+.form__option-input[type="radio"]:hover + .form__option-label::before {
+    border: 1px solid $stat-list-hover;
+  }
+.form__option-input[type="radio"]:active + .form__option-label::before,
+.form__option-input[type="radio"]:active + .form__option-label {
+    opacity: 0.3;
+  }
+
 // Pseudo Inputs - Checkbox
 .form__option-input[type="checkbox"] + .form__option-label {
   padding-left: 46px;
@@ -327,9 +379,18 @@
   }
 }
 .form__option-input[type="checkbox"]:checked + .form__option-label::before {
-  background-image: url("../../img/checkbox.svg");
+  background-image: url("../../img/icons/checkbox.svg");
   background-position: center center;
   background-repeat: no-repeat;
+}
+.form__option-input[type="checkbox"]:hover + .form__option-label::before {
+    border: 1px solid $stat-list-hover;
+  }
+.form__option-input[type="checkbox"]:active + .form__option-label {
+    color: rgba($basic-black, 0.3);
+}
+.form__option-input[type="checkbox"]:active + .form__option-label::before {
+  border: 1px solid rgba($stat-list-hover, 0.3);
 }
 // Desktop grid
 .form__grid-wrapper {

@@ -20,6 +20,13 @@
   }
 }
 .social__icon {
+  fill: $special-grey-dark;
+  &:hover {
+    fill: $basic-green;
+  }
+  &:active {
+    opacity: 0.2;
+  }
   &--vk {
     width: 23px;
     height: 16px;
@@ -32,5 +39,7 @@
     width: 10px;
     height: 18px;
   }
-  transform: scale(1.5);
+  @media (min-width: $tablet-width) {
+    transform: scale(1.5);
+  }
 }

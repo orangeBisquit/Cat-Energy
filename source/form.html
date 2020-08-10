@@ -19,10 +19,15 @@
               height="38">
           </picture>
         </a>
-        <button class="header__toggle" type="button" aria-label="Открыть/Закрыть навигацию по сайту"></button>
+        <button class="header__toggle nojs__header-toggle hamburger" type="button"
+          aria-label="Открыть/Закрыть навигацию по сайту">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
       <nav class="header__nav main-nav">
-        <ul class="main-nav__list">
+        <ul class="main-nav__list nojs__main-menu">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
@@ -30,7 +35,7 @@
             <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Подбор программы</a>
+            <a class="main-nav__link main-nav__link--current" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -88,11 +93,17 @@
                 <label class="form__data-label" for="owner-email">E-mail:*</label>
                 <input class="form__data-input form__data-input--email" id="owner-email" name="owner-email" type="email"
                   placeholder="kuklachev@gmail.com" required>
+                <svg class="form__data-field-icon form__data-field-icon--mail" width="18" height="13">
+                  <use xlink:href="img/icons/sprite.svg#icon-mail"></use>
+                </svg>
               </p>
               <p class="form__data-field form__data-field--phone">
                 <label class="form__data-label" for="owner-phone">Телефон:*</label>
                 <input class="form__data-input form__data-input--phone" id="owner-phone" name="owner-phone" type="tel"
                   placeholder="8 (960) 900-60-90" required>
+                <svg class="form__data-field-icon form__data-field-icon--phone" width="20" height="20">
+                  <use xlink:href="img/icons/sprite.svg#icon-phone"></use>
+                </svg>
               </p>
             </div>
           </fieldset>
@@ -158,6 +169,13 @@
           width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
           tabindex="0"></iframe>
         <picture>
+          <source media="(min-width: 1300px)"
+            srcset="img/webp/bg-map-desktop@1x.webp 1x, img/webp/bg-map-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/webp/bg-map-tablet@1x.webp 1x, img/webp/bg-map-tablet@2x.webp 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/webp/bg-map-mobile@1x.webp 1x, img/webp/bg-map-mobile@2x.webp 2x">
+
           <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
           <img class=" dealers__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
@@ -176,17 +194,23 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Магазин Cat Energy в Vkontakte">
-                <img class="social__icon" src="img/icon-vk.svg" width="23" height="13">
+                <svg class="social__icon social__icon--vk" width="23" height="13">
+                  <use xlink:href="img/icons/sprite.svg#icon-vk"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Магазин Cat Energy в Instagram">
-                <img class="social__icon" src="img/icon-insta.svg" width="16" height="16">
+                <svg class="social__icon social__icon--insta" width="16" height="16">
+                  <use xlink:href="img/icons/sprite.svg#icon-insta"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Магазин Cat Energy в Facebook">
-                <img class="social__icon" src="img/icon-fb.svg" width="10" height="18">
+                <svg class="social__icon social__icon--fb" width="10" height="18">
+                  <use xlink:href="img/icons/sprite.svg#icon-fb"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -195,12 +219,16 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
             aria-label="Ссылка на сайт HTML Academy">
             <p class="copyright__text">HTML Academy</p>
-            <img class="copyright__logo" src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="34">
+            <svg class="copyright__logo" src="img/icons/htmlacademy.svg" alt="Логотип HTML Academy" width="27"
+              height="34">
+              <use xlink:href="img/icons/sprite.svg#htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </div>
     </div>
   </footer>
+  <script src="js/hamburger.js"></script>
 </body>
 
 </html>

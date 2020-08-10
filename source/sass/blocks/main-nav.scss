@@ -1,13 +1,17 @@
 .main-nav__list {
-  display: flex;
+  display: none;
   flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
   @media (min-width: $tablet-width) {
+    display: flex;
     flex-direction: row;
     justify-content: flex-end;
     margin-right: -34px;
+  }
+  &--active {
+    display: flex;
   }
 }
 .main-nav__item {
@@ -31,14 +35,24 @@
   color: $basic-black;
   text-decoration: none;
   text-transform: uppercase;
+  &:hover {
+    opacity: 0.7;
+  }
+  &:active {
+    opacity: 0.3;
+  }
   @media (min-width: $tablet-width) {
     display: inline-block;
     margin-right: 35px;
-    padding: 18px 0;
+    padding: 18px 0 10px;
     width: auto;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+    &--current {
+      margin-bottom: -2px;
+      border-bottom: 2px solid $basic-green;
+    }
   }
   @media (min-width: $desktop-width) {
     font-size: 20px;
@@ -48,5 +62,9 @@
     @media (min-width: $desktop-width) {
       color: $basic-white;
     }
+  }
+  &--special-current {
+    margin-bottom: -2px;
+    border-bottom: 2px solid $basic-white;
   }
 }
