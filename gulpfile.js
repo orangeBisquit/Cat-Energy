@@ -7,13 +7,17 @@ const autoprefixer = require("autoprefixer");
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 
+const htmlmin = require("gulp-htmlmin");
+
+const uglify = require("gulp-uglify");
+const pipeline = require("readable-stream").pipeline;
+
 const sync = require("browser-sync").create();
 
 const imagemin = require("gulp-imagemin");
 const del = require("del");
 
 // Styles
-
 const styles = () => {
   return gulp
     .src("source/sass/style.scss")
@@ -30,8 +34,36 @@ const styles = () => {
 
 exports.styles = styles;
 
-// Server
+// HTML Minification
+const minify = () => {
+  return gulp
+    .src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(
+      rename(function (path) {
+        path.basename += ".min";
+      })
+    )
+    .pipe(gulp.dest("build"));
+};
 
+exports.minify = minify;
+
+// JS Minification
+const compress = () => {
+  return pipeline(
+    gulp.src("source/js/*.js"),
+    uglify(),
+    rename(function (path) {
+      path.basename += ".min";
+    }),
+    gulp.dest("build/js")
+  );
+};
+
+exports.compress = compress;
+
+// Server
 const server = (done) => {
   sync.init({
     server: {
@@ -87,7 +119,6 @@ const copy = () => {
         "source/img/webp/**",
         "source/js/**",
         "source/*.ico",
-        "source/*.html",
       ],
       {
         base: "source",
@@ -100,6 +131,6 @@ exports.copy = copy;
 
 // Build
 
-const build = gulp.series(clean, copy, styles);
+const build = gulp.series(clean, copy, minify, styles);
 
 exports.build = build;
