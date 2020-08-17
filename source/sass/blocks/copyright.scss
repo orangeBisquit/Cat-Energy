@@ -7,7 +7,15 @@
     justify-content: flex-end;
     align-items: flex-start;
   }
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    width: 170px;
+  }
   .copyright__logo {
+    position: relative;
+    left: 6px;
+    width: 40px;
+    height: 40px;
     fill: $special-grey-dark;
   }
   &:hover .copyright__logo {
@@ -25,7 +33,10 @@
   color: $basic-grey-dark;
   @media (min-width: $tablet-width) {
     margin: 0;
-    margin-right: 24px;
+    margin-right: 11px;
     margin-top: 7px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-top: 12px;
   }
 }

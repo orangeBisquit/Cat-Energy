@@ -57,14 +57,14 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
+    &--current-special {
+      margin-bottom: -2px;
+      border-bottom: 2px solid $basic-white;
+    }
   }
   &--special {
     @media (min-width: $desktop-width) {
       color: $basic-white;
     }
-  }
-  &--special-current {
-    margin-bottom: -2px;
-    border-bottom: 2px solid $basic-white;
   }
 }

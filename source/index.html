@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="preload" href="nojs.min.js" as="script">
 </head>
 
 <body class="page-body">
@@ -29,7 +30,8 @@
       <nav class="header__nav main-nav">
         <ul class="main-nav__list nojs__main-menu">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--special main-nav__link--special-current" href="#">Главная</a>
+            <a class="main-nav__link main-nav__link--special main-nav__link--current main-nav__link--current-special"
+              href="#">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--special" href="catalog.html">Каталог продукции</a>
@@ -87,9 +89,10 @@
               <div class="category__img-inner category__img-inner--bulk"></div>
             </div>
             <h2 class="category__title">Набор массы</h2>
-            <p class="category__description">Заработать авторитет среди дворовых котов <br> и даже собак? Серия Cat
+            <p class="category__description category__description--special">Заработать авторитет среди дворовых котов и
+              даже собак? Серия Cat
               Energy
-              Pro поможет вашему коту нарастить необходимые <br>
+              Pro поможет вашему коту нарастить необходимые
               мышцы!</p>
             <a class="category__link" href="catalog-pro.html">Каталог Pro</a>
           </li>
@@ -176,7 +179,9 @@
               <div class="progress-slider__pseudo-outer">
                 <div class="progress-slider__pseudo-inner"></div>
               </div>
-              <input class="progress-slider__range" type="range" min="0" max="100" step="0.1" value="51">
+              <input class="progress-slider__range" id="progres-slider" type="range" min="0" max="100" step="0.1"
+                value="51">
+              <label class="visually-hidden" for="progres-slider">Результат до и после</label>
               <button class="progress-slider__button progress-slider__button--after" type="button">Стало</button>
             </div>
           </div>
@@ -261,8 +266,9 @@
       </div>
     </div>
   </footer>
-  <script src="js/comparison-slider.js"></script>
-  <script src="js/hamburger.js"></script>
+  <script src="js/nojs.min.js"></script>
+  <script src="js/comparison-slider.min.js"></script>
+  <script src="js/hamburger.min.js"></script>
 </body>
 
 </html>

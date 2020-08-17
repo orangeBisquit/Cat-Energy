@@ -39,11 +39,6 @@ const minify = () => {
   return gulp
     .src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(
-      rename(function (path) {
-        path.basename += ".min";
-      })
-    )
     .pipe(gulp.dest("build"));
 };
 
@@ -117,7 +112,6 @@ const copy = () => {
         "source/img/**",
         "source/img/icons/**",
         "source/img/webp/**",
-        "source/js/**",
         "source/*.ico",
       ],
       {
@@ -131,6 +125,6 @@ exports.copy = copy;
 
 // Build
 
-const build = gulp.series(clean, copy, minify, styles);
+const build = gulp.series(clean, copy, minify, compress, styles);
 
 exports.build = build;

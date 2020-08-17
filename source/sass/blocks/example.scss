@@ -125,7 +125,6 @@
     position: relative;
     top: -44px;
     left: 74px;
-    transform: scale(1);
   }
 }
 .example__img-box {
@@ -149,6 +148,9 @@
       width: 54%;
     }
   }
+  &:first-child > .example__demo-img {
+    padding-left: 4px;
+  }
 }
 .example__demo-img {
   position: relative;
@@ -163,7 +165,8 @@
   }
   @media (min-width: $desktop-width) {
     position: relative;
-    top: -50px;
+    top: -5px;
+    left: -42px;
     margin-bottom: -114px;
   }
 }
