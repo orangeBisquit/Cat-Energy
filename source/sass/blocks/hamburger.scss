@@ -1,8 +1,8 @@
 .hamburger {
   display: block;
   position: absolute;
-  top: 25px;
-  right: 20px;
+  top: 23px;
+  right: 0px;
   border: 0;
   padding: 0;
   width: 24px;
@@ -26,7 +26,9 @@
   }
 }
 .hamburger--active {
-  width: 30px;
+  top: 18px;
+  width: 24px;
+  height: 24px;
   span {
     margin-bottom: -2px;
   }

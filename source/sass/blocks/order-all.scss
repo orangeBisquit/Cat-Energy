@@ -31,7 +31,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
     justify-content: space-between;
-    padding: 55px 41px 42px;
+    padding: 55px 41px 45px;
     width: 245px;
     min-height: 289px;
     background-image: url("../../img/gift-photo-desktop@1x.jpg");
@@ -64,8 +64,19 @@
   }
 }
 .order-all__visual {
-  width: 70px;
-  height: 70px;
+  position: relative;
+  top: 7px;
+  left: 3px;
+  width: 60px;
+  height: 60px;
   background-image: url("../../img/icons/icon-gift.svg");
   background-repeat: no-repeat;
+  @media (min-width: $tablet-width) {
+    top: -5px;
+    left: 11px;
+  }
+  @media (min-width: $desktop-width) {
+    top: 9px;
+    left: 3px;
+  }
 }

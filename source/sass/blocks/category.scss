@@ -66,9 +66,9 @@
   background-repeat: no-repeat;
   &--slim {
     bottom: 3px;
-    left: 6px;
-    width: 50px;
-    height: 50px;
+    left: 7px;
+    width: 49px;
+    height: 49px;
     background-image: url("../../img/icon-cat-slim.svg");
   }
   &--bulk {
@@ -88,7 +88,7 @@
   line-height: 37px;
   text-transform: uppercase;
   @media (min-width: $tablet-width) {
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     padding: 0;
     font-size: 36px;
     line-height: 36px;
@@ -114,6 +114,9 @@
     width: 383px;
     font-size: 16px;
     line-height: 24px;
+    &--special {
+      width: 340px;
+    }
     br {
       display: block;
     }
@@ -154,6 +157,7 @@
   }
   &::after {
     @include beforeafter;
+    display: inline;
     top: 2px;
     right: -40px;
     width: 24px;

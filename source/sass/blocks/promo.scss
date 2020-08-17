@@ -21,8 +21,9 @@
       right: 0;
       left: auto;
       width: 50vw;
-      height: 691px;
+      height: 696px;
       background-image: url("../../img/index-background-desktop@1x.jpg");
+      background-size: cover;
       background-repeat: no-repeat;
       background-position: 0 100%;
       @media (min-resolution: 2dppx) {
@@ -31,7 +32,7 @@
     }
   }
   @media (min-width: $tablet-width) {
-    padding-top: 28px;
+    padding-top: 36px;
     color: $basic-black;
   }
   @media (min-width: $desktop-width) {
@@ -42,7 +43,7 @@
 .promo__wrapper {
   margin: 0 auto;
   padding-top: 28px;
-  padding-bottom: 22px;
+  padding-bottom: 21px;
   width: 320px;
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -58,15 +59,21 @@
     padding-left: 82px;
   }
   @media (min-width: $desktop-width) {
+    padding-top: 34px;
     padding-left: 75px;
     width: $desktop-width;
   }
 }
 .promo__inner {
+  position: relative;
   display: flex;
   flex-direction: column;
   @media (min-width: $tablet-width) {
     align-items: flex-start;
+    padding-left: 30px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-left: 37px;
   }
 }
 .promo__title {
@@ -118,8 +125,10 @@
   }
   @media (min-width: $desktop-width) {
     position: absolute;
-    right: 20%;
-    bottom: 169px;
+    transform: translateX(50%);
+    right: 50%;
+    bottom: -21px;
+    right: 535px;
     width: 552px;
     height: 499px;
   }
