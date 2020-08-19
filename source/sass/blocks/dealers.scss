@@ -1,21 +1,25 @@
 .dealers {
   position: relative;
   background-color: $basic-light;
+
   &--light {
     background-color: $basic-white;
   }
 }
+
 .dealers__inner {
   display: flex;
   margin: 0 auto;
   padding: 33px 0 22px;
   padding-right: 10px;
   width: 320px;
+
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     padding: 62px 0 58px;
     width: 625px;
   }
+
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 95px;
@@ -24,23 +28,30 @@
     width: 570px;
     background-color: $basic-white;
   }
+
   &--index {
     padding: 28px 0 26px;
+
     @media (min-width: $tablet-width) {
       padding: 64px 0 58px;
     }
+
     @media (min-width: $desktop-width) {
       padding: 61px 89px 55px 76px;
     }
   }
+
   &--catalog {
     padding-top: 28px;
+
     @media (min-width: $tablet-width) {
       padding-top: 63px;
     }
   }
+
   &--form {
     padding-bottom: 26px;
+
     @media (min-width: $tablet-width) {
       padding-bottom: 60px;
     }
@@ -54,55 +65,66 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
   @media (min-width: $tablet-width) {
     padding-top: 3px;
     width: 160px;
     font-size: 20px;
     line-height: 26px;
   }
+
   @media (min-width: $desktop-width) {
     width: 163px;
     line-height: 25px;
   }
 }
+
 .dealers__address {
   margin: 0;
   width: 50%;
   font-family: $font-arial;
   font-size: 14px;
   line-height: 20px;
+
   @media (min-width: $tablet-width) {
     text-align: right;
     width: 190px;
     font-size: 16px;
     line-height: 20px;
+
     span {
       display: block;
       margin-top: 19px;
     }
   }
+
   @media (min-width: $desktop-width) {
     width: 155px;
     text-align: left;
   }
 }
+
 .dealers__map-wrapper {
   position: relative;
   height: 362px;
+
   @media (min-width: $tablet-width) {
     height: 400px;
   }
 }
+
 .dealers__interactive-map {
   position: relative;
   z-index: 5;
   border: 0;
   width: 100vw;
   height: 362px;
+
   @media (min-width: $tablet-width) {
     height: 400px;
   }
 }
+
 .dealers__map-image {
   display: block;
   position: absolute;
@@ -113,10 +135,12 @@
   margin: 0 auto;
   width: 320px;
   height: 362px;
+
   @media (min-width: $tablet-width) {
     width: 768px;
     height: 400px;
   }
+
   @media (min-width: $desktop-width) {
     width: 1440px;
   }

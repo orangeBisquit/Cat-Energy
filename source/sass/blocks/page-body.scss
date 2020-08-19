@@ -7,59 +7,76 @@
   overflow-x: hidden;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
+
   @media (min-width: $tablet-width) {
     padding-right: 30px;
   }
+
   @media (min-width: $desktop-width) {
     padding-right: 40px;
   }
 }
+
 .page-body__promo {
   @media (min-width: $desktop-width) {
     margin-bottom: 82px;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 83px;
   }
 }
+
 .page-body__category {
   margin-bottom: 29px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 44px;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 71px;
   }
 }
+
 .page-body__advantages {
   margin-bottom: 46px;
+
   @media (min-width: $desktop-width) {
     margin-bottom: 56px;
   }
 }
+
 .page-body__catalog {
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 74px;
   }
 }
+
 .page-body__addons {
   margin-bottom: 35px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 76px;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 88px;
   }
 }
+
 .page-body__order-all {
   margin-bottom: 35px;
+
   @media (min-width: $desktop-width) {
     margin-bottom: 69px;
   }
 }
+
 .page-body__example {
   @media (min-width: $desktop-width) {
     margin-bottom: 36px;

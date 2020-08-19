@@ -6,39 +6,49 @@
   padding-right: 10px;
   width: 280px;
   list-style: none;
+
   @media (min-width: $tablet-width) {
     margin-top: 8px;
     padding-right: 15px;
     width: auto;
   }
 }
+
 .social__item:not(:last-child) {
   margin-right: 38px;
   margin-bottom: 10px;
+
   @media (min-width: $tablet-width) {
     margin-right: 34px;
   }
 }
+
 .social__icon {
   fill: $special-grey-dark;
+
   &:hover {
     fill: $basic-green;
   }
+
   &:active {
     opacity: 0.2;
   }
+
   &--vk {
     width: 23px;
     height: 16px;
   }
+
   &--insta {
     width: 16px;
     height: 16px;
   }
+
   &--fb {
     width: 10px;
     height: 18px;
   }
+
   @media (min-width: $tablet-width) {
     transform: scale(1.5);
   }

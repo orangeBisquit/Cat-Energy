@@ -1,29 +1,37 @@
 .content-header__title {
   position: relative;
   padding: 26px 0 38px;
+
   &::after {
     @include top-border-grey;
   }
+
   @media (min-width: $tablet-width) {
     padding: 57px 0 84px;
   }
+
   @media (min-width: $desktop-width) {
     padding-top: 69px;
   }
+
   &--catalog {
     @media (min-width: $tablet-width) {
       padding-top: 65px;
     }
+
     @media (min-width: $desktop-width) {
       padding-top: 76px;
     }
   }
+
   &--form {
     padding-bottom: 35px;
+
     @media (min-width: $tablet-width) {
       padding-top: 65px;
       padding-bottom: 55px;
     }
+
     @media (min-width: $desktop-width) {
       padding-top: 75px;
     }

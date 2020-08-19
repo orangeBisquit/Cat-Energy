@@ -2,23 +2,29 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 35px;
   }
+
   @media (min-width: $desktop-width) {
     padding-bottom: 47px;
   }
 }
+
 .advantages__title {
   margin-bottom: 36px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 62px;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 64px;
   }
 }
+
 .advantages__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -26,16 +32,16 @@
     row-gap: 102px;
     margin-right: 80px;
   }
+
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 80px;
   }
 }
+
 .advantages__item {
   position: relative;
 
-  @media (min-width: $tablet-width) {
-  }
   &::before {
     display: block;
     position: absolute;
@@ -47,6 +53,7 @@
     background-color: $basic-green;
     background-repeat: no-repeat;
     background-position: center center;
+
     @media (min-width: $tablet-width) {
       position: relative;
       top: 10px;
@@ -56,38 +63,48 @@
       height: 80px;
     }
   }
+
   &--eco::before {
     background-image: url("../../img/icons/advantage-leaf@1x.png");
     background-size: 50px 50px;
+
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/icons/advantage-leaf@2x.png");
     }
   }
+
   &--ready-to-go::before {
     background-image: url("../../img/icons/advantage-powder@1x.png");
     background-size: 50px 50px;
+
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/icons/advantage-powder@2x.png");
     }
   }
+
   &--change-meals::before {
     background-image: url("../../img/icons/advantage-dining@1x.png");
     background-size: 50px 50px;
+
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/icons/advantage-dining@2x.png");
     }
   }
+
   &--fast-results::before {
     background-image: url("../../img/icons/advantage-clock@1x.png");
     background-size: 50px 50px;
+
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/icons/advantage-clock@2x.png");
     }
   }
 }
+
 .advantages__item-count {
   display: none;
   z-index: -1;
+
   @media (min-width: $tablet-width) {
     display: block;
     position: absolute;
@@ -96,11 +113,13 @@
     font-size: 280px;
     line-height: 280px;
     color: $basic-light;
+
     &--special {
       right: 15px;
     }
   }
 }
+
 .advantages__text {
   margin: 0;
   margin-bottom: 21px;
@@ -109,14 +128,17 @@
   font-family: $font-arial;
   font-size: 14px;
   line-height: 18px;
+
   br {
     display: none;
   }
+
   @media (min-width: $tablet-width) {
     padding: 0;
     width: 245px;
     font-size: 16px;
     line-height: 24px;
+
     br {
       display: block;
     }

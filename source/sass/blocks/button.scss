@@ -10,16 +10,20 @@
   text-decoration: none;
   color: $basic-white;
   background-color: $basic-green;
+
   &--small {
     font-size: 14px;
   }
+
   &:hover {
     background-color: $special-green;
   }
+
   &:active {
     color: rgba($basic-white, 0.3);
   }
 }
+
 .button--grey {
   background-color: $basic-light;
   color: $basic-grey-dark;

@@ -1,9 +1,11 @@
 .addons {
   width: 100vw;
+
   @media (min-width: $tablet-width) {
     border-top: 2px solid $basic-green;
   }
 }
+
 .addons__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
@@ -12,28 +14,34 @@
     width: 1220px;
   }
 }
+
 .addons__inner {
   width: 280px;
   margin: 0 auto;
   margin-bottom: 39px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 71px;
     width: 708px;
   }
+
   @media (min-width: $desktop-width) {
     margin: 0;
     margin-right: 79px;
     width: 896px;
   }
 }
+
 .addons__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
   @media (min-width: $tablet-width) {
     border: 1px solid $stat-list-border;
   }
 }
+
 .addons__item {
   border-bottom: 1px solid green;
 }
@@ -46,6 +54,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+
   @media (min-width: $tablet-width) {
     display: inline-block;
     top: -24px;
@@ -57,11 +66,13 @@
     line-height: 36px;
     background-color: $basic-white;
   }
+
   @media (min-width: $desktop-width) {
     position: relative;
     margin-bottom: 55px;
     right: 37px;
   }
+
   &::after {
     display: block;
     content: "";
@@ -71,6 +82,7 @@
     position: absolute;
     top: 25%;
     left: 90%;
+
     @media (min-width: $tablet-width) {
       display: none;
     }

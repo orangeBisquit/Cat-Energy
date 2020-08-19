@@ -4,9 +4,11 @@
   border-top: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
   padding: 25px 0;
+
   &::before {
     display: block;
     position: absolute;
+
     @media (min-width: $tablet-width) {
       border: 2px solid $basic-light;
       top: 80px;
@@ -15,29 +17,35 @@
       width: 100%;
       height: calc(100% - 80px);
     }
+
     @media (min-width: $desktop-width) {
       top: 82px;
       height: calc(100% - 79px);
     }
   }
+
   @media (min-width: $tablet-width) {
     border: 0;
     padding: 0;
   }
 }
+
 .product-all__inner {
   height: 100%;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 133px 37px 38px;
   }
+
   @media (min-width: $desktop-width) {
     padding-left: 22px;
     padding-right: 22px;
   }
 }
+
 .product-all__button-plus {
   display: block;
   margin: 0 auto;
@@ -49,12 +57,14 @@
   background-image: url("../../img/icons/icon-plus-mobile.svg");
   background-color: transparent;
   opacity: 0.3;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 49px;
     width: 60px;
     height: 60px;
   }
 }
+
 .product-all__title {
   margin: 0;
   margin-bottom: 8px;
@@ -63,6 +73,7 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     margin-bottom: 23px;
@@ -71,6 +82,7 @@
     line-height: 22px;
   }
 }
+
 .product-all__description {
   margin: 0;
   margin-bottom: 21px;
@@ -78,6 +90,7 @@
   font-size: 12px;
   line-height: 16px;
   text-align: center;
+
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     width: 200px;
@@ -85,17 +98,22 @@
     line-height: 18px;
   }
 }
+
 .product-all__button-all {
   font-size: 16px;
+
   &:hover {
     background-color: $basic-grey;
   }
+
   &:active {
     color: rgba($basic-black, 0.3);
   }
+
   @media (min-width: $tablet-width) {
     margin-top: auto;
   }
+
   @media (min-width: $desktop-width) {
     margin-right: 16px;
     margin-left: 16px;

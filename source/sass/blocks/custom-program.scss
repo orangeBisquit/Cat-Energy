@@ -3,17 +3,21 @@
     @media (min-width: $tablet-width) {
       width: 630px;
     }
+
     @media (min-width: $desktop-width) {
       width: 1220px;
     }
   }
+
   @media (min-width: $tablet-width) {
     padding-bottom: 45px;
   }
+
   @media (min-width: $desktop-width) {
     padding-bottom: 56px;
   }
 }
+
 .custom-program__description {
   margin: 0;
   margin-bottom: 39px;
@@ -21,6 +25,7 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
     width: 330px;

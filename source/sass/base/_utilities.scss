@@ -3,24 +3,30 @@
 *::after {
   box-sizing: border-box;
 }
+
 .container {
   width: 280px;
   margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     width: $content-tablet;
   }
+
   @media (min-width: $desktop-width) {
     width: $content-desktop;
   }
+
   &--special {
     @media (min-width: $tablet-width) {
       width: 630px;
     }
+
     @media (min-width: $desktop-width) {
       width: 1220px;
     }
   }
 }
+
 .visually-hidden {
   position: absolute;
   margin: -1px;

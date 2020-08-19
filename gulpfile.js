@@ -86,15 +86,17 @@ exports.default = gulp.series(styles, server, watcher);
 
 const images = () => {
   return gulp
-    .src("source/img/**/*.{jpg,png,svg}")
+    .src("source/img/**/**/*.{jpg,png,svg}")
     .pipe(
       imagemin([
         imagemin.optipng({ optimizationLevel: 3 }),
-        imagemin.jpegtran({ progressive: true }),
+        imagemin.mozjpeg({ progressive: true }),
         imagemin.svgo(),
-      ])
+      ]).pipe(gulp.dest("build/img"))
     );
 };
+
+exports.images = images;
 
 // Copy
 
@@ -125,6 +127,12 @@ exports.copy = copy;
 
 // Build
 
-const build = gulp.series(clean, copy, minify, compress, styles);
+const build = gulp.series(clean, copy, images, minify, compress, styles);
 
 exports.build = build;
+
+// Build & Start
+
+const start = gulp.series(build, server);
+
+exports.start = start;

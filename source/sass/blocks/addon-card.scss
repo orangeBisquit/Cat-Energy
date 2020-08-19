@@ -1,9 +1,11 @@
 .addon-card {
   border-bottom: 1px solid $stat-list-border;
   padding: 13px 0 18px;
+
   @media (min-width: $tablet-width) {
     padding: 26px 38px 25px;
   }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -19,64 +21,77 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 26px;
     font-size: 20px;
     line-height: 20px;
   }
+
   @media (min-width: $desktop-width) {
     margin: 0;
   }
 }
+
 .addon-card__main-wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
   }
+
   @media (min-width: $desktop-width) {
     flex-grow: 1;
     margin-right: 40px;
     align-items: center;
   }
 }
+
 .addon-card__sub-wrapper {
   display: flex;
   justify-content: space-between;
   padding-bottom: 14px;
+
   @media (min-width: $tablet-width) {
     padding-top: 3px;
   }
+
   @media (min-width: $desktop-width) {
     padding: 0;
     padding-top: 5px;
     width: 286px;
   }
 }
+
 .addon-card__description,
 .addon-card__price {
   margin: 0;
   font-family: $font-arial;
   font-size: 14px;
   line-height: 14px;
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
   }
 }
+
 .addon-card__description {
   @media (min-width: $tablet-width) {
     margin-right: 53px;
   }
+
   @media (min-width: $desktop-width) {
     margin: 0;
   }
 }
+
 .addon-card__price {
   @media (min-width: $desktop-width) {
     min-width: 42px;
     text-align: left;
   }
 }
+
 .addon-card__button-order {
   min-width: 244px;
 }

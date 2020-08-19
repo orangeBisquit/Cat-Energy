@@ -4,20 +4,23 @@
   align-items: center;
   padding-left: 38px;
   padding-right: 33px;
+
   @media (min-width: $tablet-width) {
     margin-top: 17px;
     padding-left: 62px;
     padding-right: 64px;
   }
+
   @media (min-width: $desktop-width) {
     position: relative;
-    top: -20px;
+    top: -20;
     left: 5px;
     margin: 0;
     padding-left: 135px;
     padding-right: 0;
   }
 }
+
 .progress-slider__pseudo-outer {
   display: flex;
   justify-content: flex-start;
@@ -28,39 +31,47 @@
   width: 84px;
   height: 14px;
   background-color: $basic-white;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
+
 .progress-slider__pseudo-inner {
   border-radius: 6px;
   width: 35px;
   height: 6px;
   background-color: $basic-green;
 }
+
 .progress-slider__range {
   display: none;
   appearance: none;
+
   @media (min-width: $tablet-width) {
     display: block;
     width: 428px;
     height: 6px;
   }
+
   &::-webkit-slider-runnable-track {
     border-radius: 6px;
     height: 6px;
     background-color: $special-grey;
   }
+
   &::-ms-track {
     border-radius: 6px;
     height: 6px;
     background-color: $special-grey;
   }
+
   &::-moz-range-track {
     border-radius: 6px;
     height: 6px;
     background-color: $special-grey;
   }
+
   &::-webkit-slider-thumb {
     appearance: none;
     margin-top: -13px;
@@ -68,9 +79,10 @@
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
     background-color: $basic-green;
   }
+
   &::-moz-range-thumb {
     box-sizing: border-box;
     appearance: none;
@@ -79,9 +91,10 @@
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
     background-color: $basic-green;
   }
+
   &::-ms-thumb {
     appearance: none;
     margin-top: -13px;
@@ -89,42 +102,76 @@
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
     background-color: $basic-green;
   }
-  &:active,
-  &:focus {
+
+  &:active {
     outline: 0;
   }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus::-webkit-slider-thumb {
+    outline: 3px solid $basic-grey-dark;
+  }
+
+  &:focus::-moz-range-thumb {
+    outline: 3px solid $basic-grey-dark;
+  }
+
+  &:focus::-ms-thumb {
+    outline: 3px solid $basic-grey-dark;
+  }
+
   &:hover::-webkit-slider-thumb {
-    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
   }
+
   &:hover::-moz-range-thumb {
-    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
   }
+
   &:hover::-ms-thumb {
-    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
   }
+
   &:active::-webkit-slider-thumb {
     box-shadow: 0 0 0 1px $basic-green;
   }
+
   &:active::-moz-range-thumb {
     box-shadow: 0 0 0 1px $basic-green;
   }
+
   &:active::-ms-thumb {
     box-shadow: 0 0 0 1px $basic-green;
   }
 }
+
 .progress-slider__button {
   border: 0;
+  border-bottom: 1px dashed $slider-button;
   font-family: $font-oswald;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 20;
   text-transform: uppercase;
   background-color: $example-bg;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     background-color: $basic-light;
+  }
+
+  &:hover {
+    border-style: solid;
+  }
+
+  &:active {
+    border: 0;
+    margin-bottom: 1px;
   }
 }

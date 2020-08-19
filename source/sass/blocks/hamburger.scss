@@ -2,45 +2,50 @@
   display: block;
   position: absolute;
   top: 23px;
-  right: 0px;
+  right: 0;
   border: 0;
   padding: 0;
   width: 24px;
   height: 18px;
   background-color: $basic-white;
   cursor: pointer;
+
   &:focus {
     outline: 0;
   }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
+
   span {
     display: block;
     height: 1.5px;
     width: 100%;
     background-color: $basic-black;
     margin-bottom: 6.5px;
-    -webkit-transition: 0.5s all;
     transition: 0.5s all;
   }
 }
+
 .hamburger--active {
   top: 18px;
   width: 24px;
   height: 24px;
+
   span {
     margin-bottom: -2px;
   }
+
   span:nth-child(1) {
-    -webkit-transform: translateY(3px) rotate(-45deg);
-    transform: rotate(-45deg);
+    transform: translateY(3px) rotate(-45deg);
   }
+
   span:nth-child(2) {
     display: none;
   }
+
   span:nth-child(3) {
-    -webkit-transform: translateY(3px) rotate(45deg);
-    transform: rotate(45deg);
+    transform: translateY(3px) rotate(45deg);
   }
 }
