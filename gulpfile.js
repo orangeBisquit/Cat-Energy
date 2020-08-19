@@ -133,6 +133,6 @@ exports.build = build;
 
 // Build & Start
 
-const start = gulp.series(build, server);
+const start = gulp.series(build, server, watcher);
 
 exports.start = start;
