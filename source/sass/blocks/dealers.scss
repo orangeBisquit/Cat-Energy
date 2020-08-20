@@ -101,6 +101,18 @@
     width: 155px;
     text-align: left;
   }
+
+  &--catalog,
+  &--form {
+    position: relative;
+    left: 5px;
+    width: 140px;
+
+    @media (min-width: $tablet-width) {
+      width: 190px;
+      left: auto;
+    }
+  }
 }
 
 .dealers__map-wrapper {

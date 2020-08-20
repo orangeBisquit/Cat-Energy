@@ -462,6 +462,10 @@
 .form__option-input[type="radio"] + .form__option-label {
   padding-left: 46px;
 
+  @media (min-width: $tablet-width) {
+    padding-left: 56px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-left: 54px;
   }
@@ -478,7 +482,7 @@
 
   @media (min-width: $tablet-width) {
     top: -5px;
-    left: -13px;
+    left: -4px;
     width: 40px;
     height: 40px;
   }

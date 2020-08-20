@@ -13,6 +13,10 @@
     margin-right: -34px;
   }
 
+  @media (min-width: $desktop-width) {
+    max-width: 600px;
+  }
+
   &--active {
     display: flex;
   }
